@@ -1,0 +1,1232 @@
+.protocol[data-protocol=https],
+.protocol[data-protocol=vivaldi],
+.protocol[data-protocol=chrome-extension],
+.protocol[data-protocol=file] {
+    display: none;
+}
+
+.SiteInfoButton-SecurityBadge {
+    margin-top: 2px;
+}
+#browser.color-behind-tabs-on, #browser ~ div.color-behind-tabs-on {
+background-color: #151b30 !important;
+    
+}
+
+.button-toolbar .ExtensionDropdownIcon:not(:last-child) {
+   margin-right: 21px !important;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   padding: 5px;
+}
+
+.extensionIconPopupMenu .button-popup-wrapper {
+    overflow: scroll;
+}
+
+
+.extensionIconPopupMenu ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background : var(--colorAccentBg) !important;
+    /** background: rgb(23, 23, 23) !important; *//
+}
+.toolbar {
+
+    margin: auto 0;
+}
+.toolbar-mainbar {
+
+    background-color: transparent !important;
+}
+
+:root {
+  --WButtonHoverBg: #38444f;
+  --GXtransition: 0.2s;
+  --GXaccentColor: #151b30;
+  --GXaccentColorLight: hsl(260, 24%, 15%);
+  --GXaccentColorLighter: hsl(260, 21%, 18%);
+  --GXcolorAccentFgFaded: #d9d9d9;
+  --GXcolorAccentFg: #f6f6f6;
+  --GXaccentColorIncognito: #221f29;
+  --GXaccentColorIncognitoLight: hsl(258, 17%, 21%);
+  --GXaccentColorIncognitoLighter: hsl(258, 14%, 23%);
+  --spnr1: #949499;
+  --spnr2: #838489;
+  --spnr3: #807f85;
+  --spnr4: #67666c;
+  --spnr5: #54535a;
+  --spnr6: #3d3a43;
+  --spnr7: #2d2b33;
+  --spnr8: #221f28;
+  --checkboxAnimation: 0.18s cubic-bezier(0.26, -0.21, 0.79, 1.22);
+}
+/* Sidebar */
+
+
+#panels-container.left #switch, #switch>button:focus:not(active) {
+  background-color: var(--colorBg) !important;
+  box-shadow: none !important;
+  border-right: none !important;
+}
+
+#panels #switch {
+  margin-left: 3px !important;
+  overflow-y: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 40px !important;
+}
+
+#panels #switch::-webkit-scrollbar {
+  width: 0px;
+}
+
+#panels {
+  background-color: var(--colorBg) !important;
+}
+
+#panels #switch>button:not(:last-of-type), #panels #switch>div {
+  margin-bottom: 12px;
+}
+
+#panels-container:not(.overlay) {
+  min-width: 40px !important;
+  border-right: none !important;
+}
+
+#panels-container:not(.overlay) .panel-group {
+  margin-left: 3px !important;
+  border-top: 1px solid var(--colorAccentBg) !important;
+  border-bottom: none !important;
+}
+
+#panels-container.overlay .panel-group {
+  left: 40px !important;
+}
+
+#panels #switch>button:nth-child(2)::before, #panels #switch button:nth-child(6)::before, #panels #switch .addwebpanel-wrapper::before, #panels #switch>button:last-of-type::before {
+  content: " ";
+  width: 12px;
+  margin-top: -16px;
+  height: 1px;
+  background-color: var(--colorAccentBg);
+  float: left;
+  margin-left: 11px;
+}
+
+#panels #switch>button:nth-child(2), #panels #switch button:nth-child(6), #panels #switch .addwebpanel-wrapper, #panels #switch>button:last-of-type {
+  margin-top: 16px;
+}
+
+.addwebpanelcallout header {
+  display: none;
+}
+
+.addwebpanelcallout .webpanel-suggestions {
+  display: none;
+}
+
+#panels .addwebpanelcallout {
+  background-color: transparent;
+  margin-left: -201px;
+  animation: none !important;
+}
+
+.addwebpanelcallout input.address {
+  width: 300px !important;
+}
+
+.addwebpanelcallout .webpanel-input {
+  transform: rotate(-90deg);
+}
+
+.addwebpanelcallout input.address {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+#panels-container:not(.overlay) .panel-collapse-guard {
+  min-width: 150px !important;
+}
+
+#panels-container.overlay {
+  border-right: none !important;
+  width: 40px !important;
+}
+
+#panels-container:after {
+  background-color: transparent;
+}
+
+div#webview-container {
+  border-left: 1px solid var(--colorAccentBg) !important;
+}
+
+#webview-container:before {
+  content: ' ';
+  position: absolute;
+  left: -1px;
+  border-left: 1px solid #131017;
+  height: 100%;
+  width: 0.5%;
+  border-top-left-radius: 100%;
+}
+
+#browser.fullscreen div#webview-container {
+  border-left: none !important;
+}
+
+#browser.fullscreen div#webview-container::before {
+  content: none !important;
+}
+
+#switch button {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+#switch button:hover, #switch button.addwebpanel-wrapper:hover {
+  background-color: transparent !important;
+}
+
+#switch button img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#switch>button:hover svg, #switch>button img:hover, .addwebpanel-wrapper .addwebpanel:hover svg, #switch>button.downloads.in-progress:hover div.progress {
+  transform: scale(1.18);
+  transition: 0.15s ease-out !important;
+}
+
+#switch>button svg, #switch>button img, .addwebpanel-wrapper .addwebpanel svg {
+  transition: 0.15s ease-in !important;
+}
+
+#switch>button.active {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+
+.theme-dark #switch button.webviewbtn img {
+  background-color: transparent !important;
+  filter: drop-shadow(0px 0px 1px var(--colorAccentBg));
+  border-radius: 0px !important;
+}
+
+#switch>button:hover:not(.active), .left #switch .addwebpanel-wrapper>button:hover:not(.active) {
+  box-shadow: none !important;
+}
+
+#switch .addwebpanel-wrapper>button svg, #switch>button svg {
+  padding-top: 0px !important;
+}
+
+#switch button.webviewbtn img {
+  padding: 0px !important;
+}
+
+#switch button.notes svg path {
+  d: path("M22,5.567a1.549,1.549,0,0,0-1.44-1.44,1.494,1.494,0,0,0-1.17.45L16.969,7a3.714,3.714,0,0,0-1.49-.31H7.709A3.709,3.709,0,0,0,4,10.4v7.77a3.709,3.709,0,0,0,3.71,3.71h7.77a3.709,3.709,0,0,0,3.71-3.71V10.4a3.459,3.459,0,0,0-.18-1.12l2.54-2.54A1.558,1.558,0,0,0,22,5.567Zm-3.81,4.83v7.77a2.719,2.719,0,0,1-2.71,2.71H7.709A2.719,2.719,0,0,1,5,18.167V10.4a2.719,2.719,0,0,1,2.71-2.71h7.77a2.324,2.324,0,0,1,.7.1l-4.15,4.15a1.2,1.2,0,0,0-.35.63l-.33,1.53a.563.563,0,0,0,.16.52l.26.21,1.79-.38a1.317,1.317,0,0,0,.63-.35l3.99-3.99C18.179,10.2,18.189,10.3,18.189,10.4Zm2.65-4.37-2.28,2.29-.73.74-4.37,4.38-1,.22.2-.93,4.47-4.47.71-.72,2.25-2.25a.546.546,0,0,1,.38-.16h.03a.538.538,0,0,1,.5.5A.5.5,0,0,1,20.839,6.027Z");
+}
+
+#switch button.history svg rect {
+  width: 1px;
+}
+
+#switch button.history svg rect[y="8.5"] {
+  x: 12px;
+  y: 8px;
+  height: 4px;
+}
+
+#switch button.history svg rect[y="8"] {
+  y: 9px;
+  x: 13px;
+  height: 5px;
+}
+
+#switch button.history svg path {
+  d: path("M13,5.384A7.616,7.616,0,1,1,5.384,13,7.625,7.625,0,0,1,13,5.384m0-1A8.616,8.616,0,1,0,21.616,13,8.616,8.616,0,0,0,13,4.384Z");
+}
+
+#switch button.tabs svg path {
+  d: path("M20.31,3.69H9.02a2.006,2.006,0,0,0-2,2V7.02H5.69a2.006,2.006,0,0,0-2,2V20.31a2,2,0,0,0,2,2H16.98a2,2,0,0,0,2-2V18.98h1.33a2,2,0,0,0,2-2V5.69A2,2,0,0,0,20.31,3.69ZM17.98,20.31a1,1,0,0,1-1,1H5.69a1,1,0,0,1-1-1V9.02a1,1,0,0,1,1-1H16.98a1,1,0,0,1,1,1Zm3.33-3.33a1,1,0,0,1-1,1H18.98V9.02a2.006,2.006,0,0,0-2-2H8.02V5.69a1,1,0,0,1,1-1H20.31a1,1,0,0,1,1,1Z");
+}
+
+#switch button.downloads svg path[d="M11 6C11 5.44772 11.4477 5 12 5H14C14.5523 5 15 5.44772 15 6V10H19L13 16L7 10H11V6Z"] {
+  d: path("M18.4,10.551l-4.742,4.606a.1.1,0,0,1-.162-.068V5.6h-1v9.486a.1.1,0,0,1-.162.068L7.6,10.551l-.7.718,6.034,5.861a.1.1,0,0,0,.133,0L19.1,11.268Z");
+}
+
+#panels .downloads svg path[d="M6 20C6 19.4477 6.44772 19 7 19H19C19.5523 19 20 19.4477 20 20C20 20.5523 19.5523 21 19 21H7C6.44772 21 6 20.5523 6 20Z"] {
+  d: path("M20,20.4H6v-1H20Z");
+}
+
+#switch button.bookmarks svg path {
+  d: path("M13.459,9.06a.467.467,0,0,1-.921,0,3.5,3.5,0,0,0-4.461-3c-2.234.551-3.629,2.73-3.17,5.792.282,1.874,1.773,3.759,4.185,5.67q.929.731,1.908,1.394c.266.181.53.358.848.567l.718.473a.782.782,0,0,0,.866,0l.718-.473c.317-.209.582-.386.848-.567q.979-.662,1.908-1.394c2.412-1.912,3.9-3.8,4.185-5.669.46-3.062-.936-5.24-3.17-5.793a3.5,3.5,0,0,0-4.461,3Zm4.687-3.9c2.709.671,4.4,3.3,3.867,6.827-.324,2.164-1.945,4.21-4.525,6.256q-.955.752-1.961,1.433c-.27.184-.539.364-.86.576l-.716.471a1.722,1.722,0,0,1-1.9,0l-.716-.471c-.321-.212-.59-.391-.86-.576q-1.006-.681-1.961-1.433c-2.584-2.044-4.2-4.09-4.529-6.255C3.456,8.464,5.142,5.833,7.851,5.162A4.389,4.389,0,0,1,13,7.45a4.387,4.387,0,0,1,5.148-2.288Z");
+}
+
+#switch button.addwebpanel path {
+  d: path("M20.5,12.5h-7v-7a.5.5,0,1,0-1,0v7h-7a.5.5,0,1,0,0,1h7v7a.5.5,0,1,0,1,0v-7h7a.5.5,0,1,0,0-1Z");
+}
+
+#panels .preferences svg path {
+  d: path("M14.592,21.813H11.415a.933.933,0,0,1-1-.861v0q-.13-.921-.256-1.845a6.087,6.087,0,0,1-1.024-.6q-.826.34-1.658.674a.943.943,0,0,1-1.289-.341q-.021-.036-.039-.074l-1.56-2.7a.933.933,0,0,1,.2-1.3q.028-.02.057-.039.723-.571,1.45-1.136a5.4,5.4,0,0,1,0-1.178c-.32-.247-.638-.5-.955-.746l-.509-.4a.933.933,0,0,1-.257-1.294l0-.007,1.575-2.73a.931.931,0,0,1,1.238-.448l.034.017.4.161,1.311.53a6.009,6.009,0,0,1,1.024-.6l.253-1.811a.939.939,0,0,1,.983-.893l.025,0h3.159a.94.94,0,0,1,1.009.865l0,.026.252,1.816a6.125,6.125,0,0,1,1.023.6q.584-.239,1.172-.475l.538-.217a.92.92,0,0,1,1.246.375q.018.033.033.068l1.558,2.7a.93.93,0,0,1-.209,1.3l-.047.032-.5.391q-.478.375-.957.747a5.661,5.661,0,0,1,0,1.179q.6.465,1.2.934l.234.185a.948.948,0,0,1,.314,1.3q-.02.033-.043.065l-1.569,2.711a.929.929,0,0,1-.818.514,1.325,1.325,0,0,1-.434-.094l-1.721-.7a5.921,5.921,0,0,1-1.024.6q-.124.932-.259,1.858A.925.925,0,0,1,14.592,21.813ZM9.184,17.468a.727.727,0,0,1,.45.161,5.186,5.186,0,0,0,1.069.623.7.7,0,0,1,.43.568c.09.666.182,1.327.275,1.989h3.183c.1-.648.188-1.3.274-1.961a.738.738,0,0,1,.459-.613,4.885,4.885,0,0,0,1.049-.613.721.721,0,0,1,.749-.1l1.839.75,1.578-2.706a.358.358,0,0,0,.023-.044l-.045-.037h0l-.235-.185c-.434-.341-.867-.683-1.3-1.019A.706.706,0,0,1,18.7,13.6a4.57,4.57,0,0,0,0-1.211.71.71,0,0,1,.281-.686q.538-.413,1.068-.833l.5-.392.016-.01L18.993,7.742l-.013-.02-.565.221q-.65.261-1.3.527a.709.709,0,0,1-.73-.094A5.1,5.1,0,0,0,15.3,7.747a.683.683,0,0,1-.427-.56L14.6,5.21l-3.178-.023-.291,2a.681.681,0,0,1-.429.562,4.972,4.972,0,0,0-1.08.627.708.708,0,0,1-.729.094q-.72-.3-1.44-.583l-.4-.162-.017-.009-1.59,2.742v.005l.519.414c.351.276.7.552,1.056.824a.722.722,0,0,1,.29.7,4.423,4.423,0,0,0,0,1.194.733.733,0,0,1-.3.712c-.517.4-1.028.8-1.539,1.2l-.029.023.019.035,1.559,2.7a.048.048,0,0,1,.007.017l.081-.029Q8,17.9,8.888,17.535A.781.781,0,0,1,9.184,17.468Zm10.4-3.971ZM10.141,7.052Zm2.853,9.355a3.4,3.4,0,0,1-3.4-3.4h0a3.416,3.416,0,0,1,3.392-3.414h.029a3.407,3.407,0,0,1,0,6.814v0Zm.016-5.814h-.017a2.409,2.409,0,0,0-1.686,4.12,2.382,2.382,0,0,0,1.687.694h.021a2.41,2.41,0,0,0,1.682-4.12A2.383,2.383,0,0,0,13.01,10.593Z");
+}
+
+#switch>button.downloads.in-progress div.progress div.loaded {
+  background-color: var(--colorAccentBg) !important;
+  height: 2px;
+  max-width: 16px;
+  position: absolute;
+  top: 2px;
+  border-radius: 0px !important;
+}
+
+#switch>button.downloads.in-progress div.progress {
+  background-color: var(--colorBg) !important;
+  width: 18px !important;
+  top: 22px !important;
+  left: 9px !important;
+  height: 6px;
+  border-left: 1px solid var(--colorAccentBg) !important;
+  border-right: 1px solid var(--colorAccentBg) !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-radius: 0px !important;
+}
+
+
+
+/* Line fadeout*/
+
+
+.button-toolbar.newtab {
+  position: relative;
+  border-bottom: 1px solid var(--colorAccentBg);
+  padding-right: 12vmax !important;
+}
+
+.button-toolbar.newtab:before {
+  content: ' ';
+  position: absolute;
+  bottom: -1px;
+  /*border-bottom: 1px solid var(--colorBg); */ 
+  border-bottom: 1px solid var(--colorBg);
+  height: 20%;
+  width: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+.toolbar-tabbar:nth-child(2) .button-toolbar.newtab {
+  padding-right: 46vmax !important;
+}
+
+.toolbar-tabbar:nth-child(3) .button-toolbar.newtab {
+  padding-right: 40vmax !important;
+}
+
+.toolbar-tabbar:nth-child(4) .button-toolbar.newtab {
+  padding-right: 30vmax !important;
+}
+
+.toolbar-tabbar:nth-child(5) .button-toolbar.newtab {
+  padding-right: 20vmax !important;
+}
+
+.toolbar-tabbar:nth-child(6) .button-toolbar.newtab {
+  padding-right: 15vmax !important;
+}
+
+.newtab {
+  padding-right: 80px !important;
+}
+
+
+.newtab>button:hover {
+  background-color: var(--WButtonHoverBg) !important;
+  border: none !important;
+}
+
+#browser.tabs-top .tab-position .tab {
+  margin-right: 0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABS ------------------------------------------------------------------ */
+
+.tab {
+  border-bottom: 1px solid var(--colorAccentBg);
+}
+
+.tab-position .tab.active:not(.tab-group) {
+  border-top: 1px solid var(--colorAccentBg);
+  border-left: 1px solid var(--colorAccentBg);
+  border-right: 1px solid var(--colorAccentBg);
+  border-bottom: none;
+}
+
+.close {
+  display: inline-block !important;
+  background-color: transparent !important;
+  min-width: 17px !important;
+  min-height: 17px !important;
+  width: 17px !important;
+  height: 17px !important;
+  opacity: 1 !important;
+}
+
+.tab .close svg>path, #vivaldi-tooltip .close path {
+  d: path("M13.374,4.335l-.707-.707L8.508,7.787a.012.012,0,0,1-.016,0L4.333,3.628l-.707.707L7.785,8.494a.012.012,0,0,1,0,.016L3.626,12.669l.707.707L8.492,9.217a.012.012,0,0,1,.016,0l4.159,4.159.707-.707L9.215,8.51a.012.012,0,0,1,0-.016Z");
+}
+
+.close:hover {
+  background-color: #100e15 !important;
+}
+
+#browser.private .close:hover {
+  background-color: #1b1921 !important;
+}
+
+.tab.tab-group .close svg {
+  min-width: 14px !important;
+  min-height: 14px !important;
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: 4px !important;
+}
+
+.tab-position .tab:not(.active):not(.tab-group) {
+  margin-top: 1px;
+}
+
+.tab-position .tab.active.tab-group {
+  border-left: 1px solid var(--colorAccentBg);
+  border-right: 1px solid var(--colorAccentBg);
+  border-bottom: none;
+}
+
+.maximized .tab-position .tab.active.tab-group .active {
+  border-top: 1px solid var(--colorAccentBg);
+}
+
+.tabs-top .tab.active:not(.marked):not(.tab-mini):before, .tabs-top .tab.active:not(.marked):not(.tab-mini):after, .tabs-top .tab.active:not(.marked):not(.tab-mini):before {
+  -webkit-mask-image: none;
+  bottom: 0;
+  content: none;
+}
+
+#browser:not(.private) .tab-position .tab.unread {
+  background-image: none !important;
+  background-color: hsla(260, 21%, 15%, 1) !important;
+}
+
+#browser:not(.private) .tab-position .tab.unread:hover {
+  background-image: none !important;
+  background-color: hsl(260, 16%, 25%) !important;
+}
+
+#browser.private .tab-position .tab.unread {
+  background-image: none !important;
+  background-color: hsl(258, 14%, 28%) !important;
+}
+
+#browser.private .tab-position .tab.unread:hover {
+  background-image: none !important;
+  background-color: hsl(258, 08%, 36%) !important;
+}
+
+.tab-group:not(.active) .tab-group-indicator {
+  padding: 0px 3px! important;
+}
+
+.tab-group.active .tab-group-indicator {
+  padding: 0px !important;
+}
+
+.tab-strip span:not(:first-of-type) .tab-group .tab-group-indicator {
+  margin-left: -1px !important;
+}
+
+.tab-group {
+  border-radius: 0px !important;
+}
+
+.tab-group:not(.active) .tab-indicator:not(:first-child) {
+  margin-left: 2px !important;
+}
+
+.tab-group:not(.active) .tab-indicator:not(.active) {
+  height: 3px !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-top: 6px !important;
+  border-radius: 4px !important;
+  background-color: var(--colorAccentBg) !important;
+}
+
+.tab-group:not(.active) .tab-indicator.active {
+  height: 5px !important;
+  border: 1px solid var(--colorAccentBg) !important;
+  padding: 0 !important;
+  margin-top: 5px !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+}
+
+.tab-group:not(.active) .tab-indicator:not(.active):hover {
+  height: 8px !important;
+  margin-top: 4px !important;
+}
+
+.tab-group:not(.active) .tab-indicator.active:hover {
+  background-color: var(--WButtonHoverBg) !important;
+}
+
+.tabs-at-edge .tab-group:not(.active) .tab-indicator:not(.active) {
+  margin-top: 1px !important;
+}
+
+.tabs-at-edge .tab-group:not(.active) .tab-indicator.active {
+  margin-top: 0px !important;
+}
+
+.tabs-at-edge .tab-group:not(.active) .tab-indicator:not(.active):hover {
+  margin-top: 0px !important;
+}
+
+.tab-group.active .tab-indicator {
+  border-left: 1px solid var(--colorAccentBg) !important;
+  border-right: none !important;
+  border-top: 1px solid var(--colorAccentBg) !important;
+  margin: 0px !important;
+}
+
+.tab-group.active .tab-indicator:not(.active) {
+  height: 8px !important;
+  padding: 0 !important;
+  margin-top: 6px !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--colorAccentBg) !important;
+}
+
+.tab-group.active .tab-indicator.active {
+  height: 8px !important;
+  padding: 0 !important;
+  margin-top: 6px !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+.tab-group.active .tab-indicator:last-child {
+  border-right: 1px solid var(--colorAccentBg) !important;
+}
+
+.tab-group.active .tab-indicator:not(.active):hover {
+  background-color: var(--WButtonHoverBg) !important;
+}
+
+.tabs-at-edge .tab-group.active .tab-indicator {
+  margin-top: 0px !important;
+}
+
+.tab:not(.tab-group) {
+  border-radius: 0px !important;
+  border-top-right-radius: 2px !important;
+}
+
+.tab-group .favicon.jstest-favicon-image img {
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+}
+
+.tab-group .favicon:not(.jstest-favicon-image) {
+  width: 14px;
+  height: 14px;
+  margin-top: 4px;
+}
+
+.tab-group .favicon.spinner svg {
+  height: 14px !important;
+}
+
+.tab-group .tab-audio .audioicon {
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+}
+
+.tab-group .title {
+  margin-top: 3px;
+}
+
+.tab-position .tab .tab-header .button-badge, #panels #switch .button-badge {
+  border: none !important;
+  border-radius: 100px !important;
+  font-size: 0px !important;
+  padding: 0px !important;
+  height: 8px !important;
+  min-width: 8px !important;
+  background-color: #0199ff !important;
+  z-index: 1;
+}
+
+.tab-position .tab .tab-header .button-badge {
+  display: none !important;
+}
+
+.tab-position .tab .tab-header .button-badge {
+  margin-left: 2px !important;
+  margin-right: 0px !important;
+  margin-top: 4px !important;
+  margin-bottom: 0px !important;
+}
+
+.tab-position .tab.tab-group .tab-header .button-badge {
+  transform: scale(0.8);
+  margin-top: 6px !important;
+}
+
+#panels #switch .button-badge {
+  margin-left: 0px !important;
+  margin-right: 4px !important;
+  margin-top: 4px !important;
+  margin-bottom: 0px !important;
+}
+
+.tab-position .tab.active .progress-indicator {
+  background-color: var(--colorAccentBg);
+  height: 1px;
+}
+
+.tab-position .tab:not(.active) .progress-indicator {
+  background-color: var(--WButtonHoverBg);
+  height: 2px;
+}
+
+.tab-position .tab:not(.active).tab-group .progress-indicator {
+  height: 4px;
+}
+
+.theme-dark .tab-position .tab.active .tab-header .favicon {
+  filter: none !important;
+}
+
+.theme-dark .tab-position .tab .tab-header .favicon img[srcset^="ht"] {
+  filter: drop-shadow(0px 0px 1px #fff) !important;
+}
+
+/* Adds a "zZz" text over hibernated tabs' icon - $discartedTabsIndicator */
+#tabs-container {
+    padding-top: 3px !important;
+}
+#tabs-container .tab.isdiscarded .favicon:before {
+  content: "zZz";
+  font-size: 10px;
+  position: absolute;
+  top: 8px;
+  left: -1px;
+  z-index: 1;
+  background-image: linear-gradient(0deg, hsla(263, 62%, 4%, 0.75), hsla(263, 62%, 4%, 0.75));
+  width: 18px;
+  padding-left: 3px;
+  color: #ffffff;
+}
+
+#tabs-container .tab.tab-group.isdiscarded .favicon:before {
+  font-size: 9px;
+  top: 10px;
+}
+
+#tabs-container .tab.isdiscarded .favicon, #tabs-container .tab.isdiscarded:hover .favicon {
+  filter: none !important
+}
+
+/* * */
+
+.tab-position .tab:not(.active) {
+  color: var(--GXcolorAccentFgFaded) !important;
+  fill: var(--GXcolorAccentFgFaded) !important;
+}
+
+/* This stylezation was made by user "Tam710562" - Block start */
+
+#browser .tab-position .tab .tab-header .favicon img[srcset^="/resources/favicon-"], #browser .tab-position .tab .tab-header .favicon img[srcset^="/resources/favicon_"] {
+  filter: invert(1) opacity(.5) drop-shadow(0px 0px 0px var(--colorAccentBg)) drop-shadow(0px 0px 0px var(--colorAccentBg)) drop-shadow(0px 0px 0px var(--colorAccentBg));
+}
+
+/* This stylezation was made by user "Tam710562" - Block end */
+
+div#tabs-container {
+  background-image: linear-gradient(0deg, #06030d 0%, #090610 48%, #06030d 100%);
+  margin-left: 40px;
+  padding-left: 0px !important;
+}
+
+.tab-position .tab:not(.active)::before {
+  content: " ";
+  float: right;
+  margin-left: 99.5%;
+  position: fixed;
+  font-size: 14px;
+  margin-top: 8px;
+  width: 1px;
+  height: 13px;
+  background-color: #47454c;
+}
+
+.tab-position .tab:not(.active):hover::before {
+  background-color: transparent;
+}
+
+.tab-strip span:not(:first-of-type) .tab-position .tab.active {
+  margin-left: -1px !important;
+}
+
+.tab-position .tab.marked:after {
+  border: none !important;
+  background: var(--colorAccentBgAlpha) !important;
+}
+
+.tab-position .tab:not(.active) .tab-indicator.marked {
+  border: none !important;
+  background: var(--GXcolorAccentFg) !important;
+}
+
+.tab-position .tab.active .tab-indicator.marked {
+  border: none !important;
+  background: var(--colorAccentBg) !important;
+}
+
+#browser.private .tab-position .tab.marked {
+  background-color: var(--GXaccentColorIncognito) !important;
+  border-bottom: 1px solid var(--colorAccentBg) !important;
+}
+
+#browser.private .tab-position .tab.marked:after {
+  background-color: transparent !important;
+}
+
+#browser.private .tab-position .tab.marked.unread:after {
+  background-color: hsla(0, 0%, 100%, 0.5) !important;
+}
+
+#vivaldi-tooltip .active.tooltip-item .thumbnail-caption {
+  background-color: var(--GXaccentColor);
+  color: #ffffff !important;
+}
+
+#vivaldi-tooltip .tab-solo .active.tooltip-item {
+  background-color: var(--GXaccentColor);
+}
+
+#vivaldi-tooltip .tooltip-item .thumbnail-caption {
+  background-color: var(--colorBg);
+  color: var(--GXcolorAccentFgFaded) !important;
+}
+
+#vivaldi-tooltip .tooltip-item:hover .thumbnail-caption {
+  background-color: var(--GXaccentColor);
+  color: #ffffff !important;
+}
+
+.active.tooltip-item.active {
+  border-bottom: 1px solid var(--colorAccentBg);
+}
+
+#vivaldi-tooltip .tooltip .tab-group .tooltip-item.active .thumbnail-text {
+  font-weight: 400 !important;
+}
+
+#vivaldi-tooltip .tooltip-item .thumbnail-image {
+  border-radius: 0px !important;
+  border-bottom: none !important;
+}
+
+#vivaldi-tooltip .tooltip-item:not(:last-of-type) {
+  border-right: 1px solid #47454c !important;
+}
+
+#vivaldi-tooltip .tooltip-item .tooltip-audio-button {
+  background-color: transparent !important;
+}
+
+.tab.tab-group:not(.active) .tab-indicator:not(.active), .tab.tab-group:not(.active) .tab-indicator:not(.active):hover {
+  transition: 0.1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * */
+
+/* STATUS BAR -------------------------------------------------------- */
+
+/* =================================================================== */
+
+.toolbar-statusbar {
+  background-color: var(--GXaccentColor) !important;
+  border-top: none !important;
+  border-left: 1px solid #131017 !important;
+  border-bottom: none !important;
+  margin-left: 40px;
+}
+
+.toolbar-statusbar>div>button, .toolbar-statusbar .page-zoom-controls .button-toolbar svg {
+  fill: var(--GXcolorAccentFg);
+}
+
+.toolbar-statusbar .button-toolbar>button.button-pressed {
+  background-color: transparent;
+}
+
+.toolbar-statusbar .button-toolbar button:hover {
+  background-color: #100e15 !important;
+}
+
+.toolbar-statusbar .page-zoom-controls, .toolbar-statusbar .page-zoom-controls .zoom-percent {
+  color: var(--GXcolorAccentFg) !important;
+}
+
+.toolbar-statusbar .page-zoom-controls .button-title {
+  color: var(--GXcolorAccentFg) !important;
+  ;
+}
+
+.toolbar-statusbar .page-zoom-controls button:disabled>.button-title {
+  color: var(--GXcolorAccentFg) !important;
+  opacity: 0.3;
+}
+
+/* Changing screenshot icon's camera - $statusbarNewCameraIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M6 2C4.89543 2 4 2.89543 4 4H3C1.34315 4 0 5.34315 0 7V11C0 12.6569 1.34315 14 3 14H13C14.6569 14 16 12.6569 16 11V7C16 5.34315 14.6569 4 13 4H12C12 2.89543 11.1046 2 10 2H6ZM6 4H10C10 5.10457 10.8954 6 12 6H13C13.5523 6 14 6.44772 14 7V11C14 11.5523 13.5523 12 13 12H3C2.44772 12 2 11.5523 2 11V7C2 6.44772 2.44772 6 3 6H4C5.10457 6 6 5.10457 6 4Z"] {
+  d: path("M13.925,3.51H12.106a.877.877,0,0,1-.617-.254L9.725,1.51H6.285L4.521,3.256A.877.877,0,0,1,3.9,3.51H2.085a1.069,1.069,0,0,0-1.07,1.06v8.86a1.06,1.06,0,0,0,1.06,1.06h11.85a1.061,1.061,0,0,0,1.06-1.06V4.57A1.063,1.063,0,0,0,13.925,3.51Zm.06,9.92-.06.06-11.91-.06.06-7.28V5.68l.01-1.17,1.17.01H4.3a.877.877,0,0,0,.614-.251l.774-.759,1.02-1H9.3l1.02,1,.814.8a.877.877,0,0,0,.615.251h1.061l1.17.01Z");
+}
+
+.toolbar-statusbar path[d="M8 11C9.10457 11 10 10.1046 10 9C10 7.89543 9.10457 7 8 7C6.89543 7 6 7.89543 6 9C6 10.1046 6.89543 11 8 11Z"] {
+  d: path("M7.991,6.525A2.019,2.019,0,1,1,5.972,8.544,2.021,2.021,0,0,1,7.991,6.525m0-1A3.019,3.019,0,1,0,11.01,8.544,3.019,3.019,0,0,0,7.991,5.525Z");
+}
+
+/* Changing back page icon on status bar - $statusbarNewBackPageIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M10.2071 4.20711C10.5977 3.81658 10.5977 3.18342 10.2071 2.79289C9.81661 2.40237 9.18345 2.40237 8.79292 2.79289L3.58582 8L8.79292 13.2071C9.18345 13.5976 9.81661 13.5976 10.2071 13.2071C10.5977 12.8166 10.5977 12.1834 10.2071 11.7929L6.41424 8L10.2071 4.20711Z"] {
+  d: path("M4,8,11.2.8l.7.7L5.6,7.9a.1.1,0,0,0,0,.1L12,14.5l-.7.7L4,8H4Z");
+}
+
+/* Changing next page icon on status bar - $statusbarNewNextPageIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M5.79286 11.7929C5.40234 12.1834 5.40234 12.8166 5.79286 13.2071C6.18339 13.5976 6.81655 13.5976 7.20708 13.2071L12.4142 8L7.20708 2.79289C6.81655 2.40237 6.18339 2.40237 5.79287 2.79289C5.40234 3.18342 5.40234 3.81658 5.79287 4.20711L9.58576 8L5.79286 11.7929Z"] {
+  d: path("M12,8,4.8.8,4,1.5l6.4,6.4a.1.1,0,0,1,0,.1L4,14.5l.7.7L12,8h0Z");
+}
+
+/* Changing back domain icon on status bar - $statusbarNewBackDomainIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M6 3C6.55228 3 7 3.44772 7 4V7L10.2929 3.70711C10.9229 3.07714 12 3.52331 12 4.41421V11.5858C12 12.4767 10.9229 12.9229 10.2929 12.2929L7 9V12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12V4C5 3.44772 5.44772 3 6 3Z"] {
+  d: path("M11.1.8h0L3.9,8h0l7.2,7.2h1V.8ZM5.4,8.1a.1.1,0,0,1,0-.1l5.7-5.7V13.7Z");
+}
+
+/* Changing next domain icon on status bar - $statusbarNewNextDomainIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M10 13C9.44772 13 9 12.5523 9 12L9 9L5.70711 12.2929C5.07714 12.9229 4 12.4767 4 11.5858L4 4.41421C4 3.52331 5.07714 3.07714 5.70711 3.70711L9 7L9 4C9 3.44771 9.44772 3 10 3C10.5523 3 11 3.44771 11 4L11 12C11 12.5523 10.5523 13 10 13Z"] {
+  d: path("M3.9.8V15.2h1L12.1,8h0L4.9.8h-1Zm1,13V2.3l5.7,5.7a.1.1,0,0,1,0,.1Z");
+}
+
+/* Changing refresh icon on status bar - $statusbarNewRefreshIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M14 2.20711C14 1.76166 13.4614 1.53857 13.1464 1.85356L11.7246 3.27543C11.3372 2.96859 10.911 2.7088 10.4541 2.50391C9.21538 1.94834 7.82481 1.82932 6.50965 2.16629C5.19448 2.50327 4.03248 3.27631 3.2135 4.35912C2.39451 5.44193 1.96697 6.77049 2.00073 8.12771C2.03448 9.48494 2.52754 10.7906 3.39933 11.8314C4.27113 12.8721 5.47012 13.5864 6.80041 13.8576C8.1307 14.1288 9.51363 13.9408 10.7233 13.3244C11.4465 12.9557 12.0823 12.447 12.5968 11.8333C12.6276 11.7965 12.6581 11.7593 12.688 11.7218C12.7896 11.5946 12.886 11.4632 12.9771 11.3278C13.2826 10.8737 13.0562 10.2799 12.558 10.0533C12.1616 9.87286 11.7138 9.98233 11.3753 10.2501C11.3189 10.2948 11.2654 10.3439 11.2158 10.3968C11.1891 10.4252 11.1635 10.4548 11.1391 10.4853C10.7843 10.9298 10.3368 11.2969 9.82334 11.5585C9.01328 11.9714 8.08715 12.0973 7.19628 11.9157C6.30542 11.734 5.50247 11.2557 4.91865 10.5587C4.33482 9.86172 4.00463 8.98735 3.98203 8.07844C3.95942 7.16953 4.24574 6.27982 4.7942 5.55468C5.34265 4.82955 6.12082 4.31185 7.00156 4.08619C7.88231 3.86052 8.81354 3.94023 9.64312 4.31228C9.87802 4.41763 10.1008 4.54465 10.309 4.69096L8.85356 6.14645C8.53857 6.46143 8.76166 7 9.20711 7H14V2.20711Z"] {
+  d: path("M10.2,5.8h4.2V1.3h-1V4a6.6,6.6,0,1,0,.9,6.5l-.9-.4a5.6,5.6,0,1,1-.6-5.3H10.2Z");
+}
+
+/* Changing cancel load icon on status bar - $statusbarNewCancelLoadIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M11.7071 5.70711C12.0976 5.31658 12.0976 4.68342 11.7071 4.29289C11.3166 3.90237 10.6834 3.90237 10.2929 4.29289L8 6.58579L5.70711 4.29289C5.31658 3.90237 4.68342 3.90237 4.29289 4.29289C3.90237 4.68342 3.90237 5.31658 4.29289 5.70711L6.58579 8L4.29289 10.2929C3.90237 10.6834 3.90237 11.3166 4.29289 11.7071C4.68342 12.0976 5.31658 12.0976 5.70711 11.7071L8 9.41421L10.2929 11.7071C10.6834 12.0976 11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6834 11.7071 10.2929L9.41421 8L11.7071 5.70711Z"] {
+  d: path("M12.9,12.2,8.8,8.1a.1.1,0,0,1,0-.1l4.1-4.1-.7-.7L8.1,7.2H7.9L3.8,3.1l-.7.7L7.2,7.9a.1.1,0,0,1,0,.1L3.1,12.2l.7.7L7.9,8.8h.1l4.1,4.1Z");
+}
+
+/* Changing homepage icon on status bar - $statusbarNewHomepageIcon */
+
+.toolbar-statusbar .button-toolbar svg path[d="M8 10.5C8.85199 10.5 8.97809 11.1049 8.99676 11.6963C9 11.799 9 11.9013 9 12V14C9 14.5523 9.44772 15 10 15H14C14.5523 15 15 14.5523 15 14V8.41421C15 8.149 14.8946 7.89464 14.7071 7.70711L8.70711 1.70711C8.31658 1.31658 7.68342 1.31658 7.29289 1.70711L1.29289 7.70711C1.10536 7.89464 1 8.149 1 8.41421V14C1 14.5523 1.44772 15 2 15H6C6.55228 15 7 14.5523 7 14V12C7 11.9013 7 11.799 7.00324 11.6963C7.02191 11.1049 7.14801 10.5 8 10.5ZM13 13V8.82843L8 3.82843L3 8.82843V13H5V12L4.99965 11.9448C4.99723 11.6655 4.9906 10.9031 5.28671 10.2122C5.47659 9.76911 5.8086 9.29298 6.35625 8.94816C6.89191 8.61089 7.47399 8.5 8 8.5C8.52601 8.5 9.10809 8.61089 9.64375 8.94816C10.1914 9.29298 10.5234 9.76911 10.7133 10.2122C11.0094 10.9031 11.0028 11.6655 11.0003 11.9448L11 12V13H13ZM6.99038 11.645C6.98978 11.6405 6.98933 11.6384 6.98933 11.6384L6.98953 11.6401C6.98953 11.6401 6.98997 11.6428 6.99038 11.645Z"] {
+  d: path("M8.6,1.9l-.3-.3L8,1.3l-.3.3h0l-6,6v7H6.6V10.4l.8-.8H8.6l.8.8v4.3h4.9v-7Zm4.9,11.9H10.3V10.1L9,8.7H7L5.7,10.1v3.7H2.5V8L8,2.5,13.5,8Z");
+}
+
+.button-popup {
+  background-color: #131218 !important;
+}
+
+.button-popup h2 {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #333435 !important;
+  background-color: #131218 !important;
+}
+
+.button-popup>footer {
+  background-color: #131218 !important;
+  border: none !important;
+}
+
+
+
+
+
+/* Make tabs look like Opera GX */
+
+/* Original code by user Tam710562 - Edited by GabeVilela */
+
+#browser .tab-position .tab:not(.tab-group) .tab-header {
+  clip-path: polygon(6px 0%, 100% 0, 100% 100%, 0 100%, 0% 6px);
+}
+
+#browser #tabs-container .tab-position .tab:not(.tab-group) {
+  clip-path: polygon(6px 0%, 100% 0, 100% 100%, 0 100%, 0% 6px);
+}
+
+/* * */
+
+#browser .tab-position .tab.active:not(.tab-group) .tab-header {
+  background: var(--GXaccentColor) !important;
+}
+
+#browser #tabs-container .tab-position .tab.active:not(.tab-group) {
+  background: var(--colorAccentBg) !important;
+}
+
+.tab.active, .toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large, .bookmark-bar.default, .tab-position .tab:not(.active):not(.unread):hover, .color-behind-tabs-off .toolbar-mainbar {
+  background-color: var(--GXaccentColor) !important;
+  background: var(--GXaccentColor) !important;
+}
+
+.tab-position .tab:not(.active) title {
+  color: #d9d9d9;
+}
+
+.tab-position .tab:not(.active):hover .title, .tab-position .tab.active {
+  color: #ffffff !important;
+}
+
+.tab-position .tab:not(.active) button.close {
+  fill: #b5babd !important;
+}
+
+.isblurred .tab-position .tab .title {
+  opacity: 1 !important;
+}
+
+.bookmark-bar {
+  fill: var(--GXaccentColor) !important;
+}
+
+#panels-container select, .vivaldi-settings select, #panels-container textarea, .vivaldi-settings textarea, #panels-container input[type=password], .vivaldi-settings input[type=password], #panels-container input[type=email], .vivaldi-settings input[type=email], #panels-container input[type=url], .vivaldi-settings input[type=url], #panels-container input[type=number], .vivaldi-settings input[type=number], #panels-container input[type=date], .vivaldi-settings input[type=date], #panels-container input[type=time], .vivaldi-settings input[type=time], #panels-container input[type=submit], .vivaldi-settings input[type=submit] {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+button:focus:not([tabindex='-1']), input:focus:not([tabindex='-1']), select:focus:not([tabindex='-1']), textarea:focus:not([tabindex='-1']), input[type=text]:focus:not([tabindex='-1']), input[type=search]:focus:not([tabindex='-1']), input[type=password]:focus:not([tabindex='-1']), input[type=email]:focus:not([tabindex='-1']), input[type=url]:focus:not([tabindex='-1']), input[type=number]:focus:not([tabindex='-1']), input[type=radio]:focus:not([tabindex='-1']), input[type=date]:focus:not([tabindex='-1']), input[type=time]:focus:not([tabindex='-1']), input[type=checkbox]:focus:not([tabindex='-1']), input[type=button]:focus:not([tabindex='-1']), input[type=submit]:focus:not([tabindex='-1']) {
+  box-shadow: none !important;
+}
+
+#panels-container input, #panels-container select, .vivaldi-settings select, #panels-container textarea, .vivaldi-settings textarea, .panel#downloads .download-editor, .addbookmark-cardwrapper, .notes-cardwrapper, .vivaldi-settings .settings-content {
+  background-color: var(--GXaccentColor) !important;
+}
+
+.toolbar-group>.button-toolbar>button, .panel .toolbar-nowrap>.button-toolbar button, .button-popup .dialog-add-bookmark .dialog-footer.cardview input, .button-popup .dialog-add-bookmark .dialog-footer.cardview button, .vivaldi-settings button:not(.selectbox):not(.color-preview):not(.item), .vivaldi-settings input[type=button], .vivaldi-settings input[type=submit], .vivaldi-settings select, #panels-container button.sortselector-button, .dialog-download input[type=button], .find-in-page .button-toolbar button, .button-popup>footer>input, .account-dialog input[type=submit], .account-dialog input[type=button], .account-dialog>button, .save-session .dialog-footer>input, .open-session button, .open-session input:not([type=checkbox]), button#webpage-capture-button, #modal-bg select {
+  background-color: #3d4042 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #404547 !important;
+  color: #ebebeb !important;
+  fill: #ebebeb !important;
+  border-radius: 2px !important;
+  margin-right: 3px !important;
+  margin-left: 3px !important;
+  box-shadow: none !important;
+}
+
+#panels-container select {
+  background-color: #3d4042 !important;
+  border: 1px solid var(--colorHighlightBg) !important;
+  color: #ebebeb !important;
+  fill: #ebebeb !important;
+  border-radius: 2px !important;
+  margin-right: 3px !important;
+  margin-left: 3px !important;
+  box-shadow: none !important;
+}
+
+.toolbar-group>.button-toolbar>button.button-pressed, .toolbar-group>.button-toolbar>button:not(.button-pressed):hover, .button-popup .dialog-add-bookmark .dialog-footer.cardview input:hover, .button-popup .dialog-add-bookmark .dialog-footer.cardview button:hover, .vivaldi-settings button:hover:not(.selectbox):not(.color-preview), .vivaldi-settings input[type=button]:hover, .vivaldi-settings input[type=submit]:hover, #panels-container select:hover, #panels-container button.sortselector-button:hover, .panel .toolbar-nowrap>.button-toolbar button:hover, .dialog-download input[type=button]:hover, .find-in-page .button-toolbar button:hover, .button-popup>footer>input:hover, .account-dialog input[type=submit]:hover, .account-dialog input[type=button]:hover, .account-dialog>button:hover, .save-session .dialog-footer>input:hover, .open-session button:hover, .open-session input:not([type=checkbox]):hover {
+  background-color: #494c4f !important;
+}
+
+.toolbar-group>.button-toolbar>button.button-pressed, .toolbar-group>.button-toolbar>button:active, .toolbar-group>.button-toolbar>button:active:hover, .vivaldi-settings button:active:not(.selectbox):not(.color-preview), .vivaldi-settings input[type=button]:active, .vivaldi-settings input[type=submit]:active, .vivaldi-settings button:hover:active:not(.selectbox), .vivaldi-settings input[type=button]:hover:active, .vivaldi-settings input[type=submit]:hover:active, #panels-container button.sortselector-button:active, .panel .toolbar-nowrap>.button-toolbar button:active, .panel .toolbar-nowrap>.button-toolbar button:active:hover, .button-popup .dialog-add-bookmark .dialog-footer.cardview input:focus:not([tabindex='-1']), .button-popup .dialog-add-bookmark .dialog-footer.cardview button:active, .dialog-download input[type=button]:focus:not([tabindex='-1']), .find-in-page .button-toolbar button:active, .find-in-page .button-toolbar button:active:hover, .button-popup>footer>input:active, .button-popup>footer>input:hover:active, .account-dialog input[type=submit]:active, .account-dialog input[type=button]:active, .account-dialog input[type=submit]:hover:active, .account-dialog input[type=button]:hover:active, .account-dialog>button:active, .account-dialog>button:hover:active, .save-session .dialog-footer>input:active, .save-session .dialog-footer>input:active:hover, .open-session button:active, .open-session input:not([type=checkbox]):active, .open-session button:active:hover, .open-session input:not([type=checkbox]):active:hover, .webpanel-input button, .webpanel-input button:hover, button#webpage-capture-button:hover {
+  background-color: #262729 !important;
+  box-shadow: none !important;
+}
+
+.dialog-download input[type=checkbox]:focus:not([tabindex='-1']), .find-in-page input[type=checkbox]:focus:not([tabindex='-1']) #panels-container input[type=checkbox]:focus:not([tabindex='-1']) {
+  box-shadow: none !important;
+}
+
+.toolbar-default .button-toolbar>button, input[type=date], .vivaldi-settings input[type=button]:not(.restorekey):not(.clearkey):not(.showkey), #switch input[type=button]:not(.restorekey):not(.clearkey):not(.showkey), input[type=submit], input[type=color], .webpage-button {
+  background-image: none !important;
+}
+
+select:not([multiple]):not([size]), #modal-bg select {
+  background-image: linear-gradient(55deg, #3d4042 43%, transparent 45%), linear-gradient(125deg, transparent 53%, #3d4042 55%), linear-gradient(180deg, #3d4042 30%, #5f6368 30%);
+  border: 1px solid var(--colorHighlightBg) !important;
+}
+
+select:not([multiple]):not([size]):hover, #modal-bg select:hover {
+  background-image: linear-gradient(55deg, #494c4f 43%, transparent 45%), linear-gradient(125deg, transparent 53%, #494c4f 55%), linear-gradient(180deg, #494c4f 30%, #5f6368 30%);
+}
+
+.vivaldi-settings select:hover, #modal-bg select:hover {
+  background-color: #494c4f !important;
+}
+
+/* Webpanels header stylezation - $OperaWebPanelsHeader */
+
+header.webpanel-header {
+  background-color: #14111a !important;
+  border-bottom: 1px solid #2a3a3d !important;
+  color: #b4c1cc;
+  text-align: center;
+  height: 29px;
+}
+
+header.webpanel-header h1 {
+  font-size: 12px !important;
+  font-weight: 100;
+}
+
+header.webpanel-header .toolbar-group .button-toolbar button {
+  background-color: transparent !important;
+  border: none !important;
+  fill: #b4c1cc !important;
+}
+
+header.webpanel-header .toolbar-group .button-toolbar button:hover {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+
+
+
+
+
+/* * */
+
+/* TOP BUTTONS -------------------------------------------------- */
+
+#browser+div, #browser+div+div, .window-buttongroup button {
+  fill: var(--colorAccentBg) !important;
+}
+
+#browser .window-buttongroup button:hover {
+  fill: var(--colorAccentBg) !important;
+  background-color: var(--WButtonHoverBg) !important;
+}
+
+#browser .window-buttongroup button.window-close:hover {
+  fill: #ffffff !important;
+  background-color: #cf031d !important;
+}
+
+
+
+
+#titlebar button.vivaldi {
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.vivaldi span.burger-icon {
+  opacity: 1 !important;
+}
+
+.vivaldi:hover {
+  background-color: var(--WButtonHoverBg) !important;
+}
+
+.tab-strip .button-toolbar.newtab button {
+  opacity: 1 !important;
+}
+
+.color-behind-tabs-off .toolbar-tabbar>.button-toolbar>button {
+  color: var(--colorAccentBg) !important;
+}
+
+.toggle-trash>button:hover {
+  background-color: var(--WButtonHoverBg) !important;
+  border-radius: 0px;
+}
+
+.newtab button:hover::after {
+  content: "";
+  border-bottom: 1px solid var(--colorAccentBg);
+  width: 30px;
+  position: absolute;
+  top: 29px;
+}
+
+.toggle-trash button path.trashicon-lid {
+  d: path("M19.533,11.1H6.467a.5.5,0,0,0,0,1H19.533a.5.5,0,0,0,0-1Z");
+}
+
+.toggle-trash button path.trashicon-content {
+  d: path("M6.467,8.094H19.533a.5.5,0,0,0,0-1H6.467a.5.5,0,0,0,0,1Z");
+}
+
+.toggle-trash button path.trashicon-bin {
+  d: path("M15.944,14.687,12.934,17.7l-3.01-3.01a.5.5,0,0,0-.707.707l3.363,3.363a.5.5,0,0,0,.707,0l3.364-3.365a.5.5,0,0,0-.707-.707Z");
+}
+
+#tabs-container .toggle-trash button {
+  opacity: 1 !important;
+}
+
+#header .toggle-trash svg {
+  margin: 0px !important;
+}
+
+.button-toolbar.toggle-trash>button svg .trashicon-content {
+  opacity: 1 !important;
+}
+
+.newtab button svg {
+  height: 11px !important;
+  width: 11px !important;
+  flex: none !important;
+}
+
+.newtab button svg>path {
+  d: path("M26,11.818H14.214a.032.032,0,0,1-.032-.032V0H11.818V11.786a.032.032,0,0,1-.032.032H0v2.364H11.786a.032.032,0,0,1,.032.032V26h2.364V14.214a.032.032,0,0,1,.032-.032H26Z");
+}
+
+.newtab>button, .newtab {
+  border-top-left-radius: 2px !important;
+  border-top-right-radius: 2px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: 1px solid var(--colorAccentBg);
+  z-index: 0 !important;
+}
+
+#titlebar .window-buttongroup {
+  z-index: 1 !important;
+}
+
+
+/* ADDRESS BAR =========================================================== */
+
+#main .toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large {
+  margin-left: 40px;
+  border-left: 1px solid var(--colorAccentBg) !important;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.toolbar-addressbar .button-toolbar>button:hover {
+  background-color: #100e15 !important;
+  background-image: none !important;
+}
+
+.toolbar-addressbar .button-toolbar>button:active, .toolbar-mainbar>.button-toolbar>button.button-pressed {
+  background-color: #0e0c12 !important;
+  background-image: none !important;
+}
+
+#browser.private .toolbar-addressbar>div:not(.addressfield) .button-toolbar>button:hover {
+  background-color: #1b1921 !important;
+}
+
+.addressfield, .searchfield {
+  fill: inherit !important;
+  color: inherit !important;
+}
+
+.addressfield, .addressfield form input.url {
+  background-color: var(--GXaccentColor) !important;
+  border: none !important;
+}
+
+.addressfield:hover {
+  background-color: var(--colorAccentBgAlpha) !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+.addressfield:focus-within {
+  background-color: var(--colorBg) !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+.addressfield .addressfield-siteinfo .siteinfo-ssl-issuer {
+  display: none !important;
+}
+
+.addressfield .create-bookmark #addBookmarkPath path {
+  d: path("M12.52,1.12A3.843,3.843,0,0,0,8,3.13,3.843,3.843,0,0,0,3.48,1.12C1.1,1.71-.38,4.02.09,7.11c.28,1.9,1.7,3.7,3.97,5.49.56.44,1.13.86,1.72,1.26.24.16.48.32.76.51l.63.41a1.5,1.5,0,0,0,1.67,0l.62-.41c.29-.19.52-.35.76-.51.59-.4,1.16-.82,1.72-1.26,2.27-1.79,3.69-3.59,3.97-5.49C16.38,4.01,14.9,1.71,12.52,1.12Z");
+}
+
+.addressfield .create-bookmark g[clip-path="url(#addBookmarkPath)"] path.bookmark-animated-fill {
+  d: path("M12.52,1.12A3.843,3.843,0,0,0,8,3.13,3.843,3.843,0,0,0,3.48,1.12C1.1,1.71-.38,4.02.09,7.11c.28,1.9,1.7,3.7,3.97,5.49.56.44,1.13.86,1.72,1.26.24.16.48.32.76.51l.63.41a1.5,1.5,0,0,0,1.67,0l.62-.41c.29-.19.52-.35.76-.51.59-.4,1.16-.82,1.72-1.26,2.27-1.79,3.69-3.59,3.97-5.49C16.38,4.01,14.9,1.71,12.52,1.12Z");
+}
+
+.addressfield .create-bookmark g[clip-path="url(#addBookmarkPath)"] path.bookmark-outline {
+  d: path("M8.4,4.54a.41.41,0,0,1-.809,0A3.073,3.073,0,0,0,3.678,1.906C1.716,2.39.492,4.3.895,6.992c.248,1.645,1.557,3.3,3.675,4.978q.816.642,1.675,1.224c.234.159.465.314.745.5l.63.415a.687.687,0,0,0,.76,0l.63-.415c.278-.184.511-.339.745-.5q.86-.581,1.675-1.224c2.118-1.679,3.424-3.336,3.675-4.977.4-2.688-.822-4.6-2.783-5.086A3.073,3.073,0,0,0,8.4,4.54Zm4.115-3.424c2.379.589,3.863,2.9,3.4,5.994-.284,1.9-1.708,3.7-3.973,5.493q-.839.66-1.722,1.258c-.237.162-.473.32-.755.506l-.629.414a1.512,1.512,0,0,1-1.668,0l-.629-.414c-.282-.186-.518-.343-.755-.506q-.883-.6-1.722-1.258C1.793,10.809.37,9.012.085,7.111-.379,4.017,1.1,1.707,3.479,1.118A3.854,3.854,0,0,1,8,3.127a3.852,3.852,0,0,1,4.52-2.009Z");
+}
+
+.create-bookmark button.button-on svg {
+  stroke: var(--colorAccentBg);
+}
+
+.create-bookmark button svg {
+  fill: #d3d8db !important;
+  stroke: #d3d8db;
+  stroke-width: 0.8px;
+  stroke-opacity: 0.5;
+}
+
+.create-bookmark button svg path.add-bookmark-shadow {
+  display: none !important;
+}
+
+.url::selection {
+  background-color: var(--colorAccentBg) !important;
+  color: var(--colorAccentFg) !important;
+}
+
+
