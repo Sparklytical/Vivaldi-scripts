@@ -1,44 +1,42 @@
-.protocol[data-protocol=https],
-.protocol[data-protocol=vivaldi],
-.protocol[data-protocol=chrome-extension],
-.protocol[data-protocol=file] {
-    display: none;
+.SiteInfoButton-SecurityBadge {
+  margin-top: 2px;
 }
 
-.SiteInfoButton-SecurityBadge {
-    margin-top: 2px;
-}
-#browser.color-behind-tabs-on, #browser ~ div.color-behind-tabs-on {
-background-color: #151b30 !important;
-    
+
+#browser.color-behind-tabs-on,
+#browser~div.color-behind-tabs-on {
+  background-color: #151b30 !important;
+
 }
 
 .button-toolbar .ExtensionDropdownIcon:not(:last-child) {
-   margin-right: 21px !important;
-   margin-top: 3px;
-   margin-bottom: 3px;
-   padding: 5px;
+  margin-right: 21px !important;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 5px;
 }
 
 .extensionIconPopupMenu .button-popup-wrapper {
-    overflow: scroll;
+  overflow: scroll;
 }
 
 
 .extensionIconPopupMenu ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 10px;
-    height: 10px;
-    background : var(--colorAccentBg) !important;
-    /** background: rgb(23, 23, 23) !important; *//
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: var(--colorAccentBg) !important;
+  /** background: rgb(23, 23, 23) !important; */
 }
+
 .toolbar {
 
-    margin: auto 0;
+  margin: auto 0;
 }
+
 .toolbar-mainbar {
 
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 :root {
@@ -62,10 +60,12 @@ background-color: #151b30 !important;
   --spnr8: #221f28;
   --checkboxAnimation: 0.18s cubic-bezier(0.26, -0.21, 0.79, 1.22);
 }
+
 /* Sidebar */
 
 
-#panels-container.left #switch, #switch>button:focus:not(active) {
+#panels-container.left #switch,
+#switch>button:focus:not(active) {
   background-color: var(--colorBg) !important;
   box-shadow: none !important;
   border-right: none !important;
@@ -87,7 +87,8 @@ background-color: #151b30 !important;
   background-color: var(--colorBg) !important;
 }
 
-#panels #switch>button:not(:last-of-type), #panels #switch>div {
+#panels #switch>button:not(:last-of-type),
+#panels #switch>div {
   margin-bottom: 12px;
 }
 
@@ -106,7 +107,10 @@ background-color: #151b30 !important;
   left: 40px !important;
 }
 
-#panels #switch>button:nth-child(2)::before, #panels #switch button:nth-child(6)::before, #panels #switch .addwebpanel-wrapper::before, #panels #switch>button:last-of-type::before {
+#panels #switch>button:nth-child(2)::before,
+#panels #switch button:nth-child(6)::before,
+#panels #switch .addwebpanel-wrapper::before,
+#panels #switch>button:last-of-type::before {
   content: " ";
   width: 12px;
   margin-top: -16px;
@@ -116,7 +120,10 @@ background-color: #151b30 !important;
   margin-left: 11px;
 }
 
-#panels #switch>button:nth-child(2), #panels #switch button:nth-child(6), #panels #switch .addwebpanel-wrapper, #panels #switch>button:last-of-type {
+#panels #switch>button:nth-child(2),
+#panels #switch button:nth-child(6),
+#panels #switch .addwebpanel-wrapper,
+#panels #switch>button:last-of-type {
   margin-top: 16px;
 }
 
@@ -187,7 +194,8 @@ div#webview-container {
   border-radius: 0px !important;
 }
 
-#switch button:hover, #switch button.addwebpanel-wrapper:hover {
+#switch button:hover,
+#switch button.addwebpanel-wrapper:hover {
   background-color: transparent !important;
 }
 
@@ -196,12 +204,17 @@ div#webview-container {
   height: 16px !important;
 }
 
-#switch>button:hover svg, #switch>button img:hover, .addwebpanel-wrapper .addwebpanel:hover svg, #switch>button.downloads.in-progress:hover div.progress {
+#switch>button:hover svg,
+#switch>button img:hover,
+.addwebpanel-wrapper .addwebpanel:hover svg,
+#switch>button.downloads.in-progress:hover div.progress {
   transform: scale(1.18);
   transition: 0.15s ease-out !important;
 }
 
-#switch>button svg, #switch>button img, .addwebpanel-wrapper .addwebpanel svg {
+#switch>button svg,
+#switch>button img,
+.addwebpanel-wrapper .addwebpanel svg {
   transition: 0.15s ease-in !important;
 }
 
@@ -217,11 +230,13 @@ div#webview-container {
   border-radius: 0px !important;
 }
 
-#switch>button:hover:not(.active), .left #switch .addwebpanel-wrapper>button:hover:not(.active) {
+#switch>button:hover:not(.active),
+.left #switch .addwebpanel-wrapper>button:hover:not(.active) {
   box-shadow: none !important;
 }
 
-#switch .addwebpanel-wrapper>button svg, #switch>button svg {
+#switch .addwebpanel-wrapper>button svg,
+#switch>button svg {
   padding-top: 0px !important;
 }
 
@@ -314,7 +329,7 @@ div#webview-container {
   content: ' ';
   position: absolute;
   bottom: -1px;
-  /*border-bottom: 1px solid var(--colorBg); */ 
+  /*border-bottom: 1px solid var(--colorBg); */
   border-bottom: 1px solid var(--colorBg);
   height: 20%;
   width: 100%;
@@ -389,7 +404,8 @@ div#webview-container {
   opacity: 1 !important;
 }
 
-.tab .close svg>path, #vivaldi-tooltip .close path {
+.tab .close svg>path,
+#vivaldi-tooltip .close path {
   d: path("M13.374,4.335l-.707-.707L8.508,7.787a.012.012,0,0,1-.016,0L4.333,3.628l-.707.707L7.785,8.494a.012.012,0,0,1,0,.016L3.626,12.669l.707.707L8.492,9.217a.012.012,0,0,1,.016,0l4.159,4.159.707-.707L9.215,8.51a.012.012,0,0,1,0-.016Z");
 }
 
@@ -423,7 +439,9 @@ div#webview-container {
   border-top: 1px solid var(--colorAccentBg);
 }
 
-.tabs-top .tab.active:not(.marked):not(.tab-mini):before, .tabs-top .tab.active:not(.marked):not(.tab-mini):after, .tabs-top .tab.active:not(.marked):not(.tab-mini):before {
+.tabs-top .tab.active:not(.marked):not(.tab-mini):before,
+.tabs-top .tab.active:not(.marked):not(.tab-mini):after,
+.tabs-top .tab.active:not(.marked):not(.tab-mini):before {
   -webkit-mask-image: none;
   bottom: 0;
   content: none;
@@ -450,7 +468,7 @@ div#webview-container {
 }
 
 .tab-group:not(.active) .tab-group-indicator {
-  padding: 0px 3px! important;
+  padding: 0px 3px ! important;
 }
 
 .tab-group.active .tab-group-indicator {
@@ -576,7 +594,8 @@ div#webview-container {
   margin-top: 3px;
 }
 
-.tab-position .tab .tab-header .button-badge, #panels #switch .button-badge {
+.tab-position .tab .tab-header .button-badge,
+#panels #switch .button-badge {
   border: none !important;
   border-radius: 100px !important;
   font-size: 0px !important;
@@ -634,8 +653,9 @@ div#webview-container {
 
 /* Adds a "zZz" text over hibernated tabs' icon - $discartedTabsIndicator */
 #tabs-container {
-    padding-top: 3px !important;
+  padding-top: 3px !important;
 }
+
 #tabs-container .tab.isdiscarded .favicon:before {
   content: "zZz";
   font-size: 10px;
@@ -654,7 +674,8 @@ div#webview-container {
   top: 10px;
 }
 
-#tabs-container .tab.isdiscarded .favicon, #tabs-container .tab.isdiscarded:hover .favicon {
+#tabs-container .tab.isdiscarded .favicon,
+#tabs-container .tab.isdiscarded:hover .favicon {
   filter: none !important
 }
 
@@ -667,7 +688,8 @@ div#webview-container {
 
 /* This stylezation was made by user "Tam710562" - Block start */
 
-#browser .tab-position .tab .tab-header .favicon img[srcset^="/resources/favicon-"], #browser .tab-position .tab .tab-header .favicon img[srcset^="/resources/favicon_"] {
+#browser .tab-position .tab .tab-header .favicon img[srcset^="/resources/favicon-"],
+#browser .tab-position .tab .tab-header .favicon img[srcset^="/resources/favicon_"] {
   filter: invert(1) opacity(.5) drop-shadow(0px 0px 0px var(--colorAccentBg)) drop-shadow(0px 0px 0px var(--colorAccentBg)) drop-shadow(0px 0px 0px var(--colorAccentBg));
 }
 
@@ -767,7 +789,8 @@ div#tabs-container {
   background-color: transparent !important;
 }
 
-.tab.tab-group:not(.active) .tab-indicator:not(.active), .tab.tab-group:not(.active) .tab-indicator:not(.active):hover {
+.tab.tab-group:not(.active) .tab-indicator:not(.active),
+.tab.tab-group:not(.active) .tab-indicator:not(.active):hover {
   transition: 0.1s ease;
 }
 
@@ -801,7 +824,8 @@ div#tabs-container {
   margin-left: 40px;
 }
 
-.toolbar-statusbar>div>button, .toolbar-statusbar .page-zoom-controls .button-toolbar svg {
+.toolbar-statusbar>div>button,
+.toolbar-statusbar .page-zoom-controls .button-toolbar svg {
   fill: var(--GXcolorAccentFg);
 }
 
@@ -813,7 +837,8 @@ div#tabs-container {
   background-color: #100e15 !important;
 }
 
-.toolbar-statusbar .page-zoom-controls, .toolbar-statusbar .page-zoom-controls .zoom-percent {
+.toolbar-statusbar .page-zoom-controls,
+.toolbar-statusbar .page-zoom-controls .zoom-percent {
   color: var(--GXcolorAccentFg) !important;
 }
 
@@ -922,7 +947,11 @@ div#tabs-container {
   background: var(--colorAccentBg) !important;
 }
 
-.tab.active, .toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large, .bookmark-bar.default, .tab-position .tab:not(.active):not(.unread):hover, .color-behind-tabs-off .toolbar-mainbar {
+.tab.active,
+.toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large,
+.bookmark-bar.default,
+.tab-position .tab:not(.active):not(.unread):hover,
+.color-behind-tabs-off .toolbar-mainbar {
   background-color: var(--GXaccentColor) !important;
   background: var(--GXaccentColor) !important;
 }
@@ -931,7 +960,8 @@ div#tabs-container {
   color: #d9d9d9;
 }
 
-.tab-position .tab:not(.active):hover .title, .tab-position .tab.active {
+.tab-position .tab:not(.active):hover .title,
+.tab-position .tab.active {
   color: #ffffff !important;
 }
 
@@ -947,20 +977,79 @@ div#tabs-container {
   fill: var(--GXaccentColor) !important;
 }
 
-#panels-container select, .vivaldi-settings select, #panels-container textarea, .vivaldi-settings textarea, #panels-container input[type=password], .vivaldi-settings input[type=password], #panels-container input[type=email], .vivaldi-settings input[type=email], #panels-container input[type=url], .vivaldi-settings input[type=url], #panels-container input[type=number], .vivaldi-settings input[type=number], #panels-container input[type=date], .vivaldi-settings input[type=date], #panels-container input[type=time], .vivaldi-settings input[type=time], #panels-container input[type=submit], .vivaldi-settings input[type=submit] {
+#panels-container select,
+.vivaldi-settings select,
+#panels-container textarea,
+.vivaldi-settings textarea,
+#panels-container input[type=password],
+.vivaldi-settings input[type=password],
+#panels-container input[type=email],
+.vivaldi-settings input[type=email],
+#panels-container input[type=url],
+.vivaldi-settings input[type=url],
+#panels-container input[type=number],
+.vivaldi-settings input[type=number],
+#panels-container input[type=date],
+.vivaldi-settings input[type=date],
+#panels-container input[type=time],
+.vivaldi-settings input[type=time],
+#panels-container input[type=submit],
+.vivaldi-settings input[type=submit] {
   border: none !important;
   box-shadow: none !important;
 }
 
-button:focus:not([tabindex='-1']), input:focus:not([tabindex='-1']), select:focus:not([tabindex='-1']), textarea:focus:not([tabindex='-1']), input[type=text]:focus:not([tabindex='-1']), input[type=search]:focus:not([tabindex='-1']), input[type=password]:focus:not([tabindex='-1']), input[type=email]:focus:not([tabindex='-1']), input[type=url]:focus:not([tabindex='-1']), input[type=number]:focus:not([tabindex='-1']), input[type=radio]:focus:not([tabindex='-1']), input[type=date]:focus:not([tabindex='-1']), input[type=time]:focus:not([tabindex='-1']), input[type=checkbox]:focus:not([tabindex='-1']), input[type=button]:focus:not([tabindex='-1']), input[type=submit]:focus:not([tabindex='-1']) {
+button:focus:not([tabindex='-1']),
+input:focus:not([tabindex='-1']),
+select:focus:not([tabindex='-1']),
+textarea:focus:not([tabindex='-1']),
+input[type=text]:focus:not([tabindex='-1']),
+input[type=search]:focus:not([tabindex='-1']),
+input[type=password]:focus:not([tabindex='-1']),
+input[type=email]:focus:not([tabindex='-1']),
+input[type=url]:focus:not([tabindex='-1']),
+input[type=number]:focus:not([tabindex='-1']),
+input[type=radio]:focus:not([tabindex='-1']),
+input[type=date]:focus:not([tabindex='-1']),
+input[type=time]:focus:not([tabindex='-1']),
+input[type=checkbox]:focus:not([tabindex='-1']),
+input[type=button]:focus:not([tabindex='-1']),
+input[type=submit]:focus:not([tabindex='-1']) {
   box-shadow: none !important;
 }
 
-#panels-container input, #panels-container select, .vivaldi-settings select, #panels-container textarea, .vivaldi-settings textarea, .panel#downloads .download-editor, .addbookmark-cardwrapper, .notes-cardwrapper, .vivaldi-settings .settings-content {
+#panels-container input,
+#panels-container select,
+.vivaldi-settings select,
+#panels-container textarea,
+.vivaldi-settings textarea,
+.panel#downloads .download-editor,
+.addbookmark-cardwrapper,
+.notes-cardwrapper,
+.vivaldi-settings .settings-content {
   background-color: var(--GXaccentColor) !important;
 }
 
-.toolbar-group>.button-toolbar>button, .panel .toolbar-nowrap>.button-toolbar button, .button-popup .dialog-add-bookmark .dialog-footer.cardview input, .button-popup .dialog-add-bookmark .dialog-footer.cardview button, .vivaldi-settings button:not(.selectbox):not(.color-preview):not(.item), .vivaldi-settings input[type=button], .vivaldi-settings input[type=submit], .vivaldi-settings select, #panels-container button.sortselector-button, .dialog-download input[type=button], .find-in-page .button-toolbar button, .button-popup>footer>input, .account-dialog input[type=submit], .account-dialog input[type=button], .account-dialog>button, .save-session .dialog-footer>input, .open-session button, .open-session input:not([type=checkbox]), button#webpage-capture-button, #modal-bg select {
+.toolbar-group>.button-toolbar>button,
+.panel .toolbar-nowrap>.button-toolbar button,
+.button-popup .dialog-add-bookmark .dialog-footer.cardview input,
+.button-popup .dialog-add-bookmark .dialog-footer.cardview button,
+.vivaldi-settings button:not(.selectbox):not(.color-preview):not(.item),
+.vivaldi-settings input[type=button],
+.vivaldi-settings input[type=submit],
+.vivaldi-settings select,
+#panels-container button.sortselector-button,
+.dialog-download input[type=button],
+.find-in-page .button-toolbar button,
+.button-popup>footer>input,
+.account-dialog input[type=submit],
+.account-dialog input[type=button],
+.account-dialog>button,
+.save-session .dialog-footer>input,
+.open-session button,
+.open-session input:not([type=checkbox]),
+button#webpage-capture-button,
+#modal-bg select {
   background-color: #3d4042 !important;
   border-width: 1px !important;
   border-style: solid !important;
@@ -984,33 +1073,94 @@ button:focus:not([tabindex='-1']), input:focus:not([tabindex='-1']), select:focu
   box-shadow: none !important;
 }
 
-.toolbar-group>.button-toolbar>button.button-pressed, .toolbar-group>.button-toolbar>button:not(.button-pressed):hover, .button-popup .dialog-add-bookmark .dialog-footer.cardview input:hover, .button-popup .dialog-add-bookmark .dialog-footer.cardview button:hover, .vivaldi-settings button:hover:not(.selectbox):not(.color-preview), .vivaldi-settings input[type=button]:hover, .vivaldi-settings input[type=submit]:hover, #panels-container select:hover, #panels-container button.sortselector-button:hover, .panel .toolbar-nowrap>.button-toolbar button:hover, .dialog-download input[type=button]:hover, .find-in-page .button-toolbar button:hover, .button-popup>footer>input:hover, .account-dialog input[type=submit]:hover, .account-dialog input[type=button]:hover, .account-dialog>button:hover, .save-session .dialog-footer>input:hover, .open-session button:hover, .open-session input:not([type=checkbox]):hover {
+.toolbar-group>.button-toolbar>button.button-pressed,
+.toolbar-group>.button-toolbar>button:not(.button-pressed):hover,
+.button-popup .dialog-add-bookmark .dialog-footer.cardview input:hover,
+.button-popup .dialog-add-bookmark .dialog-footer.cardview button:hover,
+.vivaldi-settings button:hover:not(.selectbox):not(.color-preview),
+.vivaldi-settings input[type=button]:hover,
+.vivaldi-settings input[type=submit]:hover,
+#panels-container select:hover,
+#panels-container button.sortselector-button:hover,
+.panel .toolbar-nowrap>.button-toolbar button:hover,
+.dialog-download input[type=button]:hover,
+.find-in-page .button-toolbar button:hover,
+.button-popup>footer>input:hover,
+.account-dialog input[type=submit]:hover,
+.account-dialog input[type=button]:hover,
+.account-dialog>button:hover,
+.save-session .dialog-footer>input:hover,
+.open-session button:hover,
+.open-session input:not([type=checkbox]):hover {
   background-color: #494c4f !important;
 }
 
-.toolbar-group>.button-toolbar>button.button-pressed, .toolbar-group>.button-toolbar>button:active, .toolbar-group>.button-toolbar>button:active:hover, .vivaldi-settings button:active:not(.selectbox):not(.color-preview), .vivaldi-settings input[type=button]:active, .vivaldi-settings input[type=submit]:active, .vivaldi-settings button:hover:active:not(.selectbox), .vivaldi-settings input[type=button]:hover:active, .vivaldi-settings input[type=submit]:hover:active, #panels-container button.sortselector-button:active, .panel .toolbar-nowrap>.button-toolbar button:active, .panel .toolbar-nowrap>.button-toolbar button:active:hover, .button-popup .dialog-add-bookmark .dialog-footer.cardview input:focus:not([tabindex='-1']), .button-popup .dialog-add-bookmark .dialog-footer.cardview button:active, .dialog-download input[type=button]:focus:not([tabindex='-1']), .find-in-page .button-toolbar button:active, .find-in-page .button-toolbar button:active:hover, .button-popup>footer>input:active, .button-popup>footer>input:hover:active, .account-dialog input[type=submit]:active, .account-dialog input[type=button]:active, .account-dialog input[type=submit]:hover:active, .account-dialog input[type=button]:hover:active, .account-dialog>button:active, .account-dialog>button:hover:active, .save-session .dialog-footer>input:active, .save-session .dialog-footer>input:active:hover, .open-session button:active, .open-session input:not([type=checkbox]):active, .open-session button:active:hover, .open-session input:not([type=checkbox]):active:hover, .webpanel-input button, .webpanel-input button:hover, button#webpage-capture-button:hover {
+.toolbar-group>.button-toolbar>button.button-pressed,
+.toolbar-group>.button-toolbar>button:active,
+.toolbar-group>.button-toolbar>button:active:hover,
+.vivaldi-settings button:active:not(.selectbox):not(.color-preview),
+.vivaldi-settings input[type=button]:active,
+.vivaldi-settings input[type=submit]:active,
+.vivaldi-settings button:hover:active:not(.selectbox),
+.vivaldi-settings input[type=button]:hover:active,
+.vivaldi-settings input[type=submit]:hover:active,
+#panels-container button.sortselector-button:active,
+.panel .toolbar-nowrap>.button-toolbar button:active,
+.panel .toolbar-nowrap>.button-toolbar button:active:hover,
+.button-popup .dialog-add-bookmark .dialog-footer.cardview input:focus:not([tabindex='-1']),
+.button-popup .dialog-add-bookmark .dialog-footer.cardview button:active,
+.dialog-download input[type=button]:focus:not([tabindex='-1']),
+.find-in-page .button-toolbar button:active,
+.find-in-page .button-toolbar button:active:hover,
+.button-popup>footer>input:active,
+.button-popup>footer>input:hover:active,
+.account-dialog input[type=submit]:active,
+.account-dialog input[type=button]:active,
+.account-dialog input[type=submit]:hover:active,
+.account-dialog input[type=button]:hover:active,
+.account-dialog>button:active,
+.account-dialog>button:hover:active,
+.save-session .dialog-footer>input:active,
+.save-session .dialog-footer>input:active:hover,
+.open-session button:active,
+.open-session input:not([type=checkbox]):active,
+.open-session button:active:hover,
+.open-session input:not([type=checkbox]):active:hover,
+.webpanel-input button,
+.webpanel-input button:hover,
+button#webpage-capture-button:hover {
   background-color: #262729 !important;
   box-shadow: none !important;
 }
 
-.dialog-download input[type=checkbox]:focus:not([tabindex='-1']), .find-in-page input[type=checkbox]:focus:not([tabindex='-1']) #panels-container input[type=checkbox]:focus:not([tabindex='-1']) {
+.dialog-download input[type=checkbox]:focus:not([tabindex='-1']),
+.find-in-page input[type=checkbox]:focus:not([tabindex='-1']) #panels-container input[type=checkbox]:focus:not([tabindex='-1']) {
   box-shadow: none !important;
 }
 
-.toolbar-default .button-toolbar>button, input[type=date], .vivaldi-settings input[type=button]:not(.restorekey):not(.clearkey):not(.showkey), #switch input[type=button]:not(.restorekey):not(.clearkey):not(.showkey), input[type=submit], input[type=color], .webpage-button {
+.toolbar-default .button-toolbar>button,
+input[type=date],
+.vivaldi-settings input[type=button]:not(.restorekey):not(.clearkey):not(.showkey),
+#switch input[type=button]:not(.restorekey):not(.clearkey):not(.showkey),
+input[type=submit],
+input[type=color],
+.webpage-button {
   background-image: none !important;
 }
 
-select:not([multiple]):not([size]), #modal-bg select {
+select:not([multiple]):not([size]),
+#modal-bg select {
   background-image: linear-gradient(55deg, #3d4042 43%, transparent 45%), linear-gradient(125deg, transparent 53%, #3d4042 55%), linear-gradient(180deg, #3d4042 30%, #5f6368 30%);
   border: 1px solid var(--colorHighlightBg) !important;
 }
 
-select:not([multiple]):not([size]):hover, #modal-bg select:hover {
+select:not([multiple]):not([size]):hover,
+#modal-bg select:hover {
   background-image: linear-gradient(55deg, #494c4f 43%, transparent 45%), linear-gradient(125deg, transparent 53%, #494c4f 55%), linear-gradient(180deg, #494c4f 30%, #5f6368 30%);
 }
 
-.vivaldi-settings select:hover, #modal-bg select:hover {
+.vivaldi-settings select:hover,
+#modal-bg select:hover {
   background-color: #494c4f !important;
 }
 
@@ -1049,7 +1199,9 @@ header.webpanel-header .toolbar-group .button-toolbar button:hover {
 
 /* TOP BUTTONS -------------------------------------------------- */
 
-#browser+div, #browser+div+div, .window-buttongroup button {
+#browser+div,
+#browser+div+div,
+.window-buttongroup button {
   fill: var(--colorAccentBg) !important;
 }
 
@@ -1134,7 +1286,8 @@ header.webpanel-header .toolbar-group .button-toolbar button:hover {
   d: path("M26,11.818H14.214a.032.032,0,0,1-.032-.032V0H11.818V11.786a.032.032,0,0,1-.032.032H0v2.364H11.786a.032.032,0,0,1,.032.032V26h2.364V14.214a.032.032,0,0,1,.032-.032H26Z");
 }
 
-.newtab>button, .newtab {
+.newtab>button,
+.newtab {
   border-top-left-radius: 2px !important;
   border-top-right-radius: 2px !important;
   border-bottom-left-radius: 0px !important;
@@ -1162,7 +1315,8 @@ header.webpanel-header .toolbar-group .button-toolbar button:hover {
   background-image: none !important;
 }
 
-.toolbar-addressbar .button-toolbar>button:active, .toolbar-mainbar>.button-toolbar>button.button-pressed {
+.toolbar-addressbar .button-toolbar>button:active,
+.toolbar-mainbar>.button-toolbar>button.button-pressed {
   background-color: #0e0c12 !important;
   background-image: none !important;
 }
@@ -1171,12 +1325,14 @@ header.webpanel-header .toolbar-group .button-toolbar button:hover {
   background-color: #1b1921 !important;
 }
 
-.addressfield, .searchfield {
+.addressfield,
+.searchfield {
   fill: inherit !important;
   color: inherit !important;
 }
 
-.addressfield, .addressfield form input.url {
+.addressfield,
+.addressfield form input.url {
   background-color: var(--GXaccentColor) !important;
   border: none !important;
 }
@@ -1228,5 +1384,3 @@ header.webpanel-header .toolbar-group .button-toolbar button:hover {
   background-color: var(--colorAccentBg) !important;
   color: var(--colorAccentFg) !important;
 }
-
-
