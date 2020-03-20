@@ -134,22 +134,22 @@ div#tabs-container {
 }
 
 #vivaldi-tooltip .active.tooltip-item .thumbnail-caption {
-  background-color: var(--GXaccentColor);
-  color: #ffffff !important;
+  background-color: var(--colorBg);
+  color: var(--colorFg) !important;
 }
 
 #vivaldi-tooltip .tab-solo .active.tooltip-item {
-  background-color: var(--GXaccentColor);
+  background-color: var(--colorBg);
 }
 
 #vivaldi-tooltip .tooltip-item .thumbnail-caption {
   background-color: var(--colorBg);
-  color: var(--GXcolorAccentFgFaded) !important;
+  color: var(--colorFg) !important;
 }
 
 #vivaldi-tooltip .tooltip-item:hover .thumbnail-caption {
-  background-color: var(--GXaccentColor);
-  color: #ffffff !important;
+  background-color: var(--colorBg);
+  color: var(--colorFg) !important;
 }
 
 .active.tooltip-item.active {
