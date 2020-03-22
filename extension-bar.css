@@ -10,14 +10,14 @@
 }
 
 .button-toolbar .ExtensionDropdownIcon:not(:last-child) {
-  margin-right: 21px !important;
+  /* margin-right: 21px !important; */
   margin-top: 3px;
   margin-bottom: 3px;
   padding: 5px;
 }
 
 .extensionIconPopupMenu .button-popup-wrapper {
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 
@@ -35,4 +35,11 @@
 
 .toolbar-mainbar {
   background-color: transparent !important;
+}
+
+/* If you need to make it appear vertical */
+
+.extensionPopupIcons .button-popup .button-popup-wrapper>div {
+  flex-direction: column !important;
+  margin-right: 10px !important;
 }

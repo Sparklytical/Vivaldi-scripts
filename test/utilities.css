@@ -177,21 +177,3 @@ div#tabs-container {
 .tab.tab-group:not(.active) .tab-indicator:not(.active):hover {
   transition: 0.1s ease;
 }
-
-
-
-
-
-
-/* Tab Related  */
-
-
-
-.color-behind-tabs-off .toolbar-tabbar>.button-toolbar>button,
-.color-behind-tabs-off .toolbar-tabbar>.toolbar-group>.button-toolbar>button {
-  color: var(--colorFg);
-}
-
-span.title {
-  color: var(--colorFg) !important;
-}

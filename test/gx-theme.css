@@ -383,9 +383,9 @@ div#webview-container {
   d: path("M13.374,4.335l-.707-.707L8.508,7.787a.012.012,0,0,1-.016,0L4.333,3.628l-.707.707L7.785,8.494a.012.012,0,0,1,0,.016L3.626,12.669l.707.707L8.492,9.217a.012.012,0,0,1,.016,0l4.159,4.159.707-.707L9.215,8.51a.012.012,0,0,1,0-.016Z");
 }
 
-/* .close:hover {
+.close:hover {
   background-color: #100e15 !important;
-} */
+}
 
 #browser.private .close:hover {
   background-color: #1b1921 !important;
@@ -991,14 +991,16 @@ header.webpanel-header .toolbar-group .button-toolbar button:hover {
 }
 
 .vivaldi:hover {
-  background-color: var(--colorBg) !important;
+  background-color: var(--WButtonHoverBg) !important;
 }
 
 .tab-strip .button-toolbar.newtab button {
   opacity: 1 !important;
 }
 
-
+.color-behind-tabs-off .toolbar-tabbar>.button-toolbar>button {
+  color: var(--colorAccentBg) !important;
+}
 
 .toggle-trash>button:hover {
   background-color: var(--WButtonHoverBg) !important;
@@ -1079,16 +1081,13 @@ header.webpanel-header .toolbar-group .button-toolbar button:hover {
 
 
 
-.color-behind-tabs-off .toolbar-mainbar {
-  /* background: var(--colorAccentBg); */
-  color: var(--colorFg);
-}
+
 
 #main .toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large {
   margin-left: 40px;
   border-left: 1px solid var(--colorAccentBg) !important;
   padding-top: 3px;
-  /* padding-bottom: 3px; */
+  padding-bottom: 3px;
 }
 
 .toolbar-addressbar .button-toolbar>button:hover {
