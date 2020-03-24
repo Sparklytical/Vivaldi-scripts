@@ -189,9 +189,354 @@ div#tabs-container {
 
 .color-behind-tabs-off .toolbar-tabbar>.button-toolbar>button,
 .color-behind-tabs-off .toolbar-tabbar>.toolbar-group>.button-toolbar>button {
-  color: var(--colorFg);
+  color: var(--colorFg) !important;
 }
 
 span.title {
   color: var(--colorFg) !important;
+}
+
+#browser.color-behind-tabs-on,
+#browser~div.color-behind-tabs-on {
+  color: var(--colorAccentFg);
+}
+
+
+
+/* Change "tab tiling" icon - apply in addressbar and status bar - $newTabTilingIcon */
+
+.tilingtoggle rect {
+  opacity: 0 !important;
+}
+
+.toolbar-addressbar .tilingtoggle button[style="--displayTileColumn:none; --displayTileRow:none;"] path {
+  d: path("M20,7a1,1,0,0,1,1,1V18a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V8A1,1,0,0,1,6,7H20m0-1H6A2,2,0,0,0,4,8V18a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V8a2,2,0,0,0-2-2Z");
+}
+
+.toolbar-addressbar .tilingtoggle button[style="--displayTileColumn:none; --displayTileRow: unset;"] path {
+  d: path("M20,6H6A2.006,2.006,0,0,0,4,8V18a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V8A2.006,2.006,0,0,0,20,6ZM11.576,19H6a1,1,0,0,1-1-1V8A1,1,0,0,1,6,7h5.576a.924.924,0,0,1,.924.924V18.076A.924.924,0,0,1,11.576,19ZM21,18a1,1,0,0,1-1,1H14.424a.924.924,0,0,1-.924-.924V7.924A.924.924,0,0,1,14.424,7H20a1,1,0,0,1,1,1Z");
+}
+
+.toolbar-addressbar .tilingtoggle button[style="--displayTileColumn: unset; --displayTileRow:none;"] path {
+  d: path("M20,6H6A2,2,0,0,0,4,8V18a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V8A2,2,0,0,0,20,6Zm1,12a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V14.5a1,1,0,0,1,1-1H20a1,1,0,0,1,1,1ZM5,11.5V8A1,1,0,0,1,6,7H20a1,1,0,0,1,1,1v3.5a1,1,0,0,1-1,1H6A1,1,0,0,1,5,11.5Z");
+}
+
+.toolbar-addressbar .tilingtoggle button[style="--displayTileColumn: unset; --displayTileRow: unset;"] path {
+  d: path("M20,6H6A2,2,0,0,0,4,8V18a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V8A2,2,0,0,0,20,6Zm0,1a1,1,0,0,1,1,1v3.5a1,1,0,0,1-1,1H14.469a.969.969,0,0,1-.969-.969V7.924A.924.924,0,0,1,14.424,7ZM11.576,7a.924.924,0,0,1,.924.924v3.607a.969.969,0,0,1-.969.969H6a1,1,0,0,1-1-1V8A1,1,0,0,1,6,7ZM6,19a1,1,0,0,1-1-1V14.5a1,1,0,0,1,1-1h5.531a.969.969,0,0,1,.969.969v3.607a.924.924,0,0,1-.924.924Zm8.424,0a.924.924,0,0,1-.924-.924V14.469a.969.969,0,0,1,.969-.969H20a1,1,0,0,1,1,1V18a1,1,0,0,1-1,1Z");
+}
+
+.toolbar-statusbar .tilingtoggle button[style="--displayTileColumn:none; --displayTileRow:none;"] path {
+  d: path("M14.222,2.857a.873.873,0,0,1,.889.857v8.571a.873.873,0,0,1-.889.857H1.778a.873.873,0,0,1-.889-.857V3.714a.873.873,0,0,1,.889-.857H14.222m0-.857H1.778A1.747,1.747,0,0,0,0,3.714v8.571A1.747,1.747,0,0,0,1.778,14H14.222A1.747,1.747,0,0,0,16,12.286V3.714A1.747,1.747,0,0,0,14.222,2Z");
+}
+
+.toolbar-statusbar .tilingtoggle button[style="--displayTileColumn:none; --displayTileRow: unset;"] path {
+  d: path("M14.222,2H1.778A1.752,1.752,0,0,0,0,3.714v8.571A1.752,1.752,0,0,0,1.778,14H14.222A1.752,1.752,0,0,0,16,12.286V3.714A1.752,1.752,0,0,0,14.222,2ZM6.734,13.143H1.778a.873.873,0,0,1-.889-.857V3.714a.873.873,0,0,1,.889-.857H6.734a.807.807,0,0,1,.821.792v8.7A.807.807,0,0,1,6.734,13.143Zm8.377-.857a.873.873,0,0,1-.889.857H9.266a.807.807,0,0,1-.821-.792v-8.7a.807.807,0,0,1,.821-.792h4.956a.873.873,0,0,1,.889.857Z");
+}
+
+.toolbar-statusbar .tilingtoggle button[style="--displayTileColumn: unset; --displayTileRow:none;"] path {
+  d: path("M14.222,2H1.778A1.747,1.747,0,0,0,0,3.714v8.571A1.747,1.747,0,0,0,1.778,14H14.222A1.747,1.747,0,0,0,16,12.286V3.714A1.747,1.747,0,0,0,14.222,2Zm.889,10.286a.873.873,0,0,1-.889.857H1.778a.873.873,0,0,1-.889-.857v-3a.873.873,0,0,1,.889-.857H14.222a.873.873,0,0,1,.889.857ZM.889,6.714v-3a.873.873,0,0,1,.889-.857H14.222a.873.873,0,0,1,.889.857v3a.873.873,0,0,1-.889.857H1.778A.873.873,0,0,1,.889,6.714Z");
+}
+
+.toolbar-statusbar .tilingtoggle button[style="--displayTileColumn: unset; --displayTileRow: unset;"] path {
+  d: path("M14.222,2H1.778A1.747,1.747,0,0,0,0,3.714v8.571A1.747,1.747,0,0,0,1.778,14H14.222A1.747,1.747,0,0,0,16,12.286V3.714A1.747,1.747,0,0,0,14.222,2Zm0,.857a.876.876,0,0,1,.889.857v3a.873.873,0,0,1-.889.857H9.306a.846.846,0,0,1-.861-.83V3.649a.807.807,0,0,1,.822-.792Zm-7.488,0a.807.807,0,0,1,.822.792V6.741a.846.846,0,0,1-.861.83H1.778a.873.873,0,0,1-.889-.857v-3a.876.876,0,0,1,.889-.857ZM1.778,13.143a.876.876,0,0,1-.889-.857v-3a.873.873,0,0,1,.889-.857H6.694a.846.846,0,0,1,.861.83v3.092a.807.807,0,0,1-.822.792Zm7.488,0a.807.807,0,0,1-.822-.792V9.259a.846.846,0,0,1,.861-.83h4.917a.873.873,0,0,1,.889.857v3a.876.876,0,0,1-.889.857Z");
+}
+
+/* * */
+
+.vivaldi-settings .password_list input[type=text][readonly] {
+  background-color: transparent !important;
+}
+
+
+
+
+
+
+
+/* Use Switches instead of Checkboxes - Apply in Vivaldi settings and some browser dialogs - $changeCheckboxes */
+
+.vivaldi-settings input[type=checkbox]:after,
+#modal-bg input[type=checkbox]:after,
+.startpage .speeddial-bookmarksbar input[type=checkbox]:after,
+.private-intro-disable input[type=checkbox]:after,
+.find-in-page input[type=checkbox]:after {
+  content: none !important;
+}
+
+.vivaldi-settings input[type="checkbox"]:checked:before,
+#modal-bg input[type="checkbox"]:checked:before,
+.startpage .speeddial-bookmarksbar input[type=checkbox]:before,
+.private-intro-disable input[type=checkbox]:before,
+.find-in-page input[type=checkbox]:before {
+  transform: none !important;
+  top: 1px;
+  right: 0px;
+  left: calc(31px - 14px);
+  bottom: 1px;
+  border-radius: 100%;
+  background-color: #c0bccc;
+  transition: var(--checkboxAnimation);
+}
+
+.vivaldi-settings input[type="checkbox"]:not(:checked):before,
+#modal-bg input[type="checkbox"]:not(:checked):before,
+.startpage .speeddial-bookmarksbar input[type=checkbox]:not(:checked):before,
+.private-intro-disable input[type=checkbox]:not(:checked):before,
+.find-in-page input[type=checkbox]:not(:checked):before {
+  transform: none !important;
+  top: 1px;
+  right: 17px;
+  left: 0px;
+  bottom: 1px;
+  border-radius: 100%;
+  background-color: #c0bccc;
+  transition: var(--checkboxAnimation);
+}
+
+.vivaldi-settings input[type="checkbox"],
+#modal-bg input[type="checkbox"],
+.startpage .speeddial-bookmarksbar input[type=checkbox],
+.private-intro-disable input[type=checkbox],
+.find-in-page input[type=checkbox] {
+  width: 35px;
+  border-width: 2px !important;
+  height: 20px;
+  border-radius: 21px;
+  background-color: #161124 !important;
+  border-color: #272234 !important;
+  flex: none !important;
+  transition: var(--checkboxAnimation);
+}
+
+.vivaldi-settings input[type="checkbox"]:checked,
+#modal-bg input[type="checkbox"]:checked,
+.startpage .speeddial-bookmarksbar input[type=checkbox]:checked,
+.private-intro-disable input[type=checkbox]:checked,
+.find-in-page input[type=checkbox]:checked {
+  width: 35px;
+  border-width: 2px !important;
+  height: 20px;
+  border-radius: 21px;
+  background-color: var(--colorHighlightBgDark) !important;
+  background-image: linear-gradient(45deg, hsla(0, 0%, 0%, 0.65), hsla(0, 0%, 0%, 0.65));
+  border-color: var(--colorHighlightBg) !important;
+  transition: var(--checkboxAnimation);
+}
+
+/* * */
+
+
+
+
+
+
+
+/* QUICK COMMANDS =============================================================================== */
+
+/* Apply a basic stylezation in Quick commands - $newQuickCommands */
+
+.quick-command-container .qc-entry,
+.quick-command-container .quick-commands {
+  background-color: #2f2a3d;
+}
+
+.quick-command-container input.quick-command-search-hint {
+  background-color: transparent;
+}
+
+.quick-command-container .qc-entry {
+  border-bottom: 1px solid #ebebeb;
+}
+
+#modal-bg.qc-modal.float>div {
+  border-radius: 10px;
+}
+
+.ReactVirtualized__Grid.ReactVirtualized__List::-webkit-scrollbar {
+  display: none;
+}
+
+input.quick-command-search:focus {
+  border: none !important;
+}
+
+/* * */
+
+
+
+
+
+
+
+
+/* POPUPS ===================================================================== */
+
+#main:not(.left):not(.right) .toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large {
+  margin: 0px !important;
+  border: 0px !important;
+  border-bottom: 1px solid #06030d !important;
+  height: 38px !important;
+}
+
+#main:not(.left):not(.right) .toolbar.toolbar-mainbar.toolbar-extensions.toolbar-large {
+  background-color: var(--GXaccentColor) !important;
+}
+
+#titlebar.tabless div#pagetitle {
+  text-align: left;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  padding-left: 28px !important;
+}
+
+#browser:not(.address-top)>#header {
+  box-shadow: none !important;
+}
+
+#browser.popup #header {
+  height: 41px !important;
+  background-color: #06030d !important;
+}
+
+#browser.popup div#pagetitle::after {
+  content: " - Vivaldi";
+}
+
+#browser.popup .addressfield:focus-within {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#browser.popup #titlebar.tabless {
+  height: 41px !important;
+}
+
+#browser.popup .window-buttongroup button {
+  height: 41px !important;
+}
+
+/* * */
+
+
+
+
+
+/* This stylezation was made by user "Tam710562" - Block start */
+
+
+
+/* TOP BUTTONS -------------------------------------------------- */
+
+#browser+div,
+#browser+div+div,
+.window-buttongroup button {
+  fill: var(--colorAccentBg) !important;
+}
+
+#browser .window-buttongroup button:hover {
+  fill: var(--colorAccentBg) !important;
+  background-color: var(--WButtonHoverBg) !important;
+}
+
+#browser .window-buttongroup button.window-close:hover {
+  fill: #ffffff !important;
+  background-color: #cf031d !important;
+}
+
+#titlebar .vivaldi svg>path[d="M11 20c3.94 0 6.14 0 7.57-1.43S20 14.94 20 11s0-6.14-1.43-7.57S14.94 2 11 2 4.86 2 3.43 3.43 2 7.06 2 11s0 6.14 1.43 7.57S7.06 20 11 20"] {
+  d: path('M10.036,19.044A3.385,3.385,0,0,1,9.476,19a2.821,2.821,0,0,1-2.027-1.479L.469,5.427A3.022,3.022,0,0,1,.3,2.547,2.932,2.932,0,0,1,2.616.98,2.694,2.694,0,0,1,5.367,2.387c.387.641.762,1.291,1.136,1.939l1.035,1.79c.422.733.845,1.467,1.281,2.193a3.051,3.051,0,0,0,3.2,1.57,3.084,3.084,0,0,0,2.737-2.337,2.769,2.769,0,0,0,.131-.9h0a4.28,4.28,0,0,0-.395-1.578,2.949,2.949,0,0,1,.08-2.59,2.925,2.925,0,0,1,2.117-1.461,2.81,2.81,0,0,1,2.522.893,2.832,2.832,0,0,1,.7,2.6,4.636,4.636,0,0,1-.563,1.241L12.68,17.315A3,3,0,0,1,10.036,19.044ZM3.01,1.955a1.989,1.989,0,0,0-.265.018A1.949,1.949,0,0,0,1.191,2.991a2.039,2.039,0,0,0,.145,1.937L8.315,17.017a1.823,1.823,0,0,0,1.325.993,1.962,1.962,0,0,0,2.174-1.194L18.486,5.243a3.856,3.856,0,0,0,.456-.977,1.833,1.833,0,0,0-.465-1.683A1.808,1.808,0,0,0,16.854,2a1.906,1.906,0,0,0-1.4.954,1.931,1.931,0,0,0-.04,1.716,5.242,5.242,0,0,1,.477,1.941h0a3.791,3.791,0,0,1-.176,1.228,4.061,4.061,0,0,1-3.57,3.034A4.025,4.025,0,0,1,7.963,8.824c-.44-.731-.866-1.47-1.292-2.21L5.637,4.826C5.266,4.183,4.894,3.539,4.511,2.9A1.7,1.7,0,0,0,3.01,1.955Z');
+}
+
+#titlebar .vivaldi svg>path[d="M16.42 8.64l-4.17 7.23a1.39 1.39 0 0 1-1.15.76 1.33 1.33 0 0 1-1.32-.7c-.88-1.51-1.75-3-2.62-4.54l-1.6-2.77A1.4 1.4 0 0 1 6.7 6.51a1.34 1.34 0 0 1 1.3.72l1.17 2c.28.48.55 1 .84 1.45a2.2 2.2 0 0 0 1.84 1.14 2.24 2.24 0 0 0 2.36-2v-.23a2.34 2.34 0 0 0-.24-1 1.4 1.4 0 1 1 2.62-.87 1.46 1.46 0 0 1-.17.92z"] {
+  d: none;
+}
+
+#titlebar .vivaldi svg>path[d="M3 5h16v2H3zM3 10h16v2H3zM3 15h16v2H3z"] {
+  d: path('M10.036,19.044A3.385,3.385,0,0,1,9.476,19a2.821,2.821,0,0,1-2.027-1.479L.469,5.427A3.022,3.022,0,0,1,.3,2.547,2.932,2.932,0,0,1,2.616.98,2.694,2.694,0,0,1,5.367,2.387c.387.641.762,1.291,1.136,1.939l1.035,1.79c.422.733.845,1.467,1.281,2.193a3.051,3.051,0,0,0,3.2,1.57,3.084,3.084,0,0,0,2.737-2.337,2.769,2.769,0,0,0,.131-.9h0a4.28,4.28,0,0,0-.395-1.578,2.949,2.949,0,0,1,.08-2.59,2.925,2.925,0,0,1,2.117-1.461,2.81,2.81,0,0,1,2.522.893,2.832,2.832,0,0,1,.7,2.6,4.636,4.636,0,0,1-.563,1.241L12.68,17.315A3,3,0,0,1,10.036,19.044ZM3.01,1.955a1.989,1.989,0,0,0-.265.018A1.949,1.949,0,0,0,1.191,2.991a2.039,2.039,0,0,0,.145,1.937L8.315,17.017a1.823,1.823,0,0,0,1.325.993,1.962,1.962,0,0,0,2.174-1.194L18.486,5.243a3.856,3.856,0,0,0,.456-.977,1.833,1.833,0,0,0-.465-1.683A1.808,1.808,0,0,0,16.854,2a1.906,1.906,0,0,0-1.4.954,1.931,1.931,0,0,0-.04,1.716,5.242,5.242,0,0,1,.477,1.941h0a3.791,3.791,0,0,1-.176,1.228,4.061,4.061,0,0,1-3.57,3.034A4.025,4.025,0,0,1,7.963,8.824c-.44-.731-.866-1.47-1.292-2.21L5.637,4.826C5.266,4.183,4.894,3.539,4.511,2.9A1.7,1.7,0,0,0,3.01,1.955Z');
+}
+
+#titlebar .vivaldi svg path {
+  fill: var(--colorAccentBg);
+}
+
+#titlebar button.vivaldi {
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.vivaldi span.burger-icon {
+  opacity: 1 !important;
+}
+
+.vivaldi:hover {
+  background-color: var(--WButtonHoverBg) !important;
+}
+
+.tab-strip .button-toolbar.newtab button {
+  opacity: 1 !important;
+}
+
+.color-behind-tabs-off .toolbar-tabbar>.button-toolbar>button {
+  color: var(--colorAccentBg) !important;
+}
+
+.toggle-trash>button:hover {
+  background-color: var(--WButtonHoverBg) !important;
+  border-radius: 0px;
+}
+
+.newtab button:hover::after {
+  content: "";
+  border-bottom: 1px solid var(--colorAccentBg);
+  width: 30px;
+  position: absolute;
+  top: 29px;
+}
+
+.toggle-trash button path.trashicon-lid {
+  d: path("M19.533,11.1H6.467a.5.5,0,0,0,0,1H19.533a.5.5,0,0,0,0-1Z");
+}
+
+.toggle-trash button path.trashicon-content {
+  d: path("M6.467,8.094H19.533a.5.5,0,0,0,0-1H6.467a.5.5,0,0,0,0,1Z");
+}
+
+.toggle-trash button path.trashicon-bin {
+  d: path("M15.944,14.687,12.934,17.7l-3.01-3.01a.5.5,0,0,0-.707.707l3.363,3.363a.5.5,0,0,0,.707,0l3.364-3.365a.5.5,0,0,0-.707-.707Z");
+}
+
+#tabs-container .toggle-trash button {
+  opacity: 1 !important;
+}
+
+#header .toggle-trash svg {
+  margin: 0px !important;
+}
+
+.button-toolbar.toggle-trash>button svg .trashicon-content {
+  opacity: 1 !important;
+}
+
+.newtab button svg {
+  height: 11px !important;
+  width: 11px !important;
+  flex: none !important;
+}
+
+.newtab button svg>path {
+  d: path("M26,11.818H14.214a.032.032,0,0,1-.032-.032V0H11.818V11.786a.032.032,0,0,1-.032.032H0v2.364H11.786a.032.032,0,0,1,.032.032V26h2.364V14.214a.032.032,0,0,1,.032-.032H26Z");
+}
+
+.newtab>button,
+.newtab {
+  border-top-left-radius: 2px !important;
+  border-top-right-radius: 2px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: 1px solid var(--colorAccentBg);
+  z-index: 0 !important;
+}
+
+#titlebar .window-buttongroup {
+  z-index: 1 !important;
 }
