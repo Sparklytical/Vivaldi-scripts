@@ -1,0 +1,6 @@
+#main .toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large {
+  margin-left: 40px;
+  /* border-left: 1px solid var(--colorAccentBg) !important; */
+  padding-top: 3px;
+  /* padding-bottom: 3px; */
+}

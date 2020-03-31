@@ -1,0 +1,258 @@
+/*------------------ SIDEBAR --------------------------------*/
+/*------------------ SIDEBAR --------------------------------*/
+/*------------------ SIDEBAR --------------------------------*/
+/*------------------ SIDEBAR --------------------------------*/
+/*------------------ SIDEBAR --------------------------------*/
+/*------------------ SIDEBAR --------------------------------*/
+
+
+
+#panels-container.left #switch,
+#switch>button:focus:not(active) {
+  background-color: var(--colorAccent) !important;
+  box-shadow: none !important;
+  border-right: none !important;
+}
+
+#panels #switch {
+  margin-left: 3px !important;
+  overflow-y: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 40px !important;
+}
+
+#panels #switch::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* #panels {
+  background-color: var(--colorBg) !important;
+} */
+
+#panels #switch>button:not(:last-of-type),
+#panels #switch>div {
+  margin-bottom: 12px;
+}
+
+#panels-container:not(.overlay) {
+  min-width: 40px !important;
+  border-right: none !important;
+}
+
+#panels-container:not(.overlay) .panel-group {
+  margin-left: 3px !important;
+  border-top: 1px solid var(--colorAccentBg) !important;
+  border-bottom: none !important;
+}
+
+#panels-container.overlay .panel-group {
+  left: 40px !important;
+}
+
+#panels #switch>button:nth-child(2)::before,
+#panels #switch button:nth-child(6)::before,
+#panels #switch .addwebpanel-wrapper::before,
+#panels #switch>button:last-of-type::before {
+  content: " ";
+  width: 12px;
+  margin-top: -16px;
+  height: 1px;
+  background-color: var(--colorAccentBg);
+  float: left;
+  margin-left: 11px;
+}
+
+#panels #switch>button:nth-child(2),
+#panels #switch button:nth-child(6),
+#panels #switch .addwebpanel-wrapper,
+#panels #switch>button:last-of-type {
+  margin-top: 16px;
+}
+
+.addwebpanelcallout header {
+  display: none;
+}
+
+.addwebpanelcallout .webpanel-suggestions {
+  display: none;
+}
+
+#panels .addwebpanelcallout {
+  background-color: transparent;
+  margin-left: -201px;
+  animation: none !important;
+}
+
+.addwebpanelcallout input.address {
+  width: 300px !important;
+}
+
+.addwebpanelcallout .webpanel-input {
+  transform: rotate(-90deg);
+}
+
+.addwebpanelcallout input.address {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+#panels-container:not(.overlay) .panel-collapse-guard {
+  min-width: 150px !important;
+}
+
+#panels-container.overlay {
+  border-right: none !important;
+  width: 40px !important;
+}
+
+#panels-container:after {
+  background-color: transparent;
+}
+
+div#webview-container {
+  border-left: 1px solid var(--colorAccentBg) !important;
+}
+
+/* #webview-container:before {
+  content: ' ';
+  position: absolute;
+  left: -1px;
+  border-left: 1px solid #131017;
+  height: 100%;
+  width: 0.5%;
+  border-top-left-radius: 100%;
+} */
+
+#browser.fullscreen div#webview-container {
+  border-left: none !important;
+}
+
+#browser.fullscreen div#webview-container::before {
+  content: none !important;
+}
+
+#switch button {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+#switch button:hover,
+#switch button.addwebpanel-wrapper:hover {
+  background-color: transparent !important;
+}
+
+#switch button img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#switch>button:hover svg,
+#switch>button img:hover,
+.addwebpanel-wrapper .addwebpanel:hover svg,
+#switch>button.downloads.in-progress:hover div.progress {
+  transform: scale(1.18);
+  transition: 0.15s ease-out !important;
+}
+
+#switch>button svg,
+#switch>button img,
+.addwebpanel-wrapper .addwebpanel svg {
+  transition: 0.15s ease-in !important;
+}
+
+#switch>button.active {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+
+.theme-dark #switch button.webviewbtn img {
+  background-color: transparent !important;
+  filter: drop-shadow(0px 0px 1px var(--colorAccentBg));
+  border-radius: 0px !important;
+}
+
+#switch>button:hover:not(.active),
+.left #switch .addwebpanel-wrapper>button:hover:not(.active) {
+  box-shadow: none !important;
+}
+
+#switch .addwebpanel-wrapper>button svg,
+#switch>button svg {
+  padding-top: 0px !important;
+}
+
+#switch button.webviewbtn img {
+  padding: 0px !important;
+}
+
+#switch button.notes svg path {
+  d: path("M22,5.567a1.549,1.549,0,0,0-1.44-1.44,1.494,1.494,0,0,0-1.17.45L16.969,7a3.714,3.714,0,0,0-1.49-.31H7.709A3.709,3.709,0,0,0,4,10.4v7.77a3.709,3.709,0,0,0,3.71,3.71h7.77a3.709,3.709,0,0,0,3.71-3.71V10.4a3.459,3.459,0,0,0-.18-1.12l2.54-2.54A1.558,1.558,0,0,0,22,5.567Zm-3.81,4.83v7.77a2.719,2.719,0,0,1-2.71,2.71H7.709A2.719,2.719,0,0,1,5,18.167V10.4a2.719,2.719,0,0,1,2.71-2.71h7.77a2.324,2.324,0,0,1,.7.1l-4.15,4.15a1.2,1.2,0,0,0-.35.63l-.33,1.53a.563.563,0,0,0,.16.52l.26.21,1.79-.38a1.317,1.317,0,0,0,.63-.35l3.99-3.99C18.179,10.2,18.189,10.3,18.189,10.4Zm2.65-4.37-2.28,2.29-.73.74-4.37,4.38-1,.22.2-.93,4.47-4.47.71-.72,2.25-2.25a.546.546,0,0,1,.38-.16h.03a.538.538,0,0,1,.5.5A.5.5,0,0,1,20.839,6.027Z");
+}
+
+#switch button.history svg rect {
+  width: 1px;
+}
+
+#switch button.history svg rect[y="8.5"] {
+  x: 12px;
+  y: 8px;
+  height: 4px;
+}
+
+#switch button.history svg rect[y="8"] {
+  y: 9px;
+  x: 13px;
+  height: 5px;
+}
+
+#switch button.history svg path {
+  d: path("M13,5.384A7.616,7.616,0,1,1,5.384,13,7.625,7.625,0,0,1,13,5.384m0-1A8.616,8.616,0,1,0,21.616,13,8.616,8.616,0,0,0,13,4.384Z");
+}
+
+#switch button.tabs svg path {
+  d: path("M20.31,3.69H9.02a2.006,2.006,0,0,0-2,2V7.02H5.69a2.006,2.006,0,0,0-2,2V20.31a2,2,0,0,0,2,2H16.98a2,2,0,0,0,2-2V18.98h1.33a2,2,0,0,0,2-2V5.69A2,2,0,0,0,20.31,3.69ZM17.98,20.31a1,1,0,0,1-1,1H5.69a1,1,0,0,1-1-1V9.02a1,1,0,0,1,1-1H16.98a1,1,0,0,1,1,1Zm3.33-3.33a1,1,0,0,1-1,1H18.98V9.02a2.006,2.006,0,0,0-2-2H8.02V5.69a1,1,0,0,1,1-1H20.31a1,1,0,0,1,1,1Z");
+}
+
+#switch button.downloads svg path[d="M11 6C11 5.44772 11.4477 5 12 5H14C14.5523 5 15 5.44772 15 6V10H19L13 16L7 10H11V6Z"] {
+  d: path("M18.4,10.551l-4.742,4.606a.1.1,0,0,1-.162-.068V5.6h-1v9.486a.1.1,0,0,1-.162.068L7.6,10.551l-.7.718,6.034,5.861a.1.1,0,0,0,.133,0L19.1,11.268Z");
+}
+
+#panels .downloads svg path[d="M6 20C6 19.4477 6.44772 19 7 19H19C19.5523 19 20 19.4477 20 20C20 20.5523 19.5523 21 19 21H7C6.44772 21 6 20.5523 6 20Z"] {
+  d: path("M20,20.4H6v-1H20Z");
+}
+
+#switch button.bookmarks svg path {
+  d: path("M13.459,9.06a.467.467,0,0,1-.921,0,3.5,3.5,0,0,0-4.461-3c-2.234.551-3.629,2.73-3.17,5.792.282,1.874,1.773,3.759,4.185,5.67q.929.731,1.908,1.394c.266.181.53.358.848.567l.718.473a.782.782,0,0,0,.866,0l.718-.473c.317-.209.582-.386.848-.567q.979-.662,1.908-1.394c2.412-1.912,3.9-3.8,4.185-5.669.46-3.062-.936-5.24-3.17-5.793a3.5,3.5,0,0,0-4.461,3Zm4.687-3.9c2.709.671,4.4,3.3,3.867,6.827-.324,2.164-1.945,4.21-4.525,6.256q-.955.752-1.961,1.433c-.27.184-.539.364-.86.576l-.716.471a1.722,1.722,0,0,1-1.9,0l-.716-.471c-.321-.212-.59-.391-.86-.576q-1.006-.681-1.961-1.433c-2.584-2.044-4.2-4.09-4.529-6.255C3.456,8.464,5.142,5.833,7.851,5.162A4.389,4.389,0,0,1,13,7.45a4.387,4.387,0,0,1,5.148-2.288Z");
+}
+
+#switch button.addwebpanel path {
+  d: path("M20.5,12.5h-7v-7a.5.5,0,1,0-1,0v7h-7a.5.5,0,1,0,0,1h7v7a.5.5,0,1,0,1,0v-7h7a.5.5,0,1,0,0-1Z");
+}
+
+#panels .preferences svg path {
+  d: path("M14.592,21.813H11.415a.933.933,0,0,1-1-.861v0q-.13-.921-.256-1.845a6.087,6.087,0,0,1-1.024-.6q-.826.34-1.658.674a.943.943,0,0,1-1.289-.341q-.021-.036-.039-.074l-1.56-2.7a.933.933,0,0,1,.2-1.3q.028-.02.057-.039.723-.571,1.45-1.136a5.4,5.4,0,0,1,0-1.178c-.32-.247-.638-.5-.955-.746l-.509-.4a.933.933,0,0,1-.257-1.294l0-.007,1.575-2.73a.931.931,0,0,1,1.238-.448l.034.017.4.161,1.311.53a6.009,6.009,0,0,1,1.024-.6l.253-1.811a.939.939,0,0,1,.983-.893l.025,0h3.159a.94.94,0,0,1,1.009.865l0,.026.252,1.816a6.125,6.125,0,0,1,1.023.6q.584-.239,1.172-.475l.538-.217a.92.92,0,0,1,1.246.375q.018.033.033.068l1.558,2.7a.93.93,0,0,1-.209,1.3l-.047.032-.5.391q-.478.375-.957.747a5.661,5.661,0,0,1,0,1.179q.6.465,1.2.934l.234.185a.948.948,0,0,1,.314,1.3q-.02.033-.043.065l-1.569,2.711a.929.929,0,0,1-.818.514,1.325,1.325,0,0,1-.434-.094l-1.721-.7a5.921,5.921,0,0,1-1.024.6q-.124.932-.259,1.858A.925.925,0,0,1,14.592,21.813ZM9.184,17.468a.727.727,0,0,1,.45.161,5.186,5.186,0,0,0,1.069.623.7.7,0,0,1,.43.568c.09.666.182,1.327.275,1.989h3.183c.1-.648.188-1.3.274-1.961a.738.738,0,0,1,.459-.613,4.885,4.885,0,0,0,1.049-.613.721.721,0,0,1,.749-.1l1.839.75,1.578-2.706a.358.358,0,0,0,.023-.044l-.045-.037h0l-.235-.185c-.434-.341-.867-.683-1.3-1.019A.706.706,0,0,1,18.7,13.6a4.57,4.57,0,0,0,0-1.211.71.71,0,0,1,.281-.686q.538-.413,1.068-.833l.5-.392.016-.01L18.993,7.742l-.013-.02-.565.221q-.65.261-1.3.527a.709.709,0,0,1-.73-.094A5.1,5.1,0,0,0,15.3,7.747a.683.683,0,0,1-.427-.56L14.6,5.21l-3.178-.023-.291,2a.681.681,0,0,1-.429.562,4.972,4.972,0,0,0-1.08.627.708.708,0,0,1-.729.094q-.72-.3-1.44-.583l-.4-.162-.017-.009-1.59,2.742v.005l.519.414c.351.276.7.552,1.056.824a.722.722,0,0,1,.29.7,4.423,4.423,0,0,0,0,1.194.733.733,0,0,1-.3.712c-.517.4-1.028.8-1.539,1.2l-.029.023.019.035,1.559,2.7a.048.048,0,0,1,.007.017l.081-.029Q8,17.9,8.888,17.535A.781.781,0,0,1,9.184,17.468Zm10.4-3.971ZM10.141,7.052Zm2.853,9.355a3.4,3.4,0,0,1-3.4-3.4h0a3.416,3.416,0,0,1,3.392-3.414h.029a3.407,3.407,0,0,1,0,6.814v0Zm.016-5.814h-.017a2.409,2.409,0,0,0-1.686,4.12,2.382,2.382,0,0,0,1.687.694h.021a2.41,2.41,0,0,0,1.682-4.12A2.383,2.383,0,0,0,13.01,10.593Z");
+}
+
+#switch>button.downloads.in-progress div.progress div.loaded {
+  background-color: var(--colorAccentBg) !important;
+  height: 2px;
+  max-width: 16px;
+  position: absolute;
+  top: 2px;
+  border-radius: 0px !important;
+}
+
+#switch>button.downloads.in-progress div.progress {
+  background-color: var(--colorBg) !important;
+  width: 18px !important;
+  top: 22px !important;
+  left: 9px !important;
+  height: 6px;
+  border-left: 1px solid var(--colorAccentBg) !important;
+  border-right: 1px solid var(--colorAccentBg) !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-radius: 0px !important;
+}
