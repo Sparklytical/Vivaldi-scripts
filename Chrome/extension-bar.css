@@ -23,7 +23,7 @@
 
 .extensionIconPopupMenu ::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: 10px;
+  width: 5px;
   height: 10px;
   background: var(--colorAccentBg) !important;
   /** background: rgb(23, 23, 23) !important; */
@@ -40,6 +40,8 @@
 /* If you need to make it appear vertical */
 
 .extensionPopupIcons .button-popup .button-popup-wrapper>div {
-  flex-direction: column !important;
-  margin-right: 10px !important;
+  flex-direction: row !important;
+  margin-right: -10px !important;
+  max-width: 200px;
+  flex-wrap: wrap;
 }

@@ -456,7 +456,7 @@ input.quick-command-search:focus {
 }
 
 #titlebar .vivaldi svg path {
-  fill: var(--colorAccentBg);
+  fill: var(--colorFg);
 }
 
 #titlebar button.vivaldi {
@@ -477,7 +477,7 @@ input.quick-command-search:focus {
 }
 
 .color-behind-tabs-off .toolbar-tabbar>.button-toolbar>button {
-  color: var(--colorAccentBg) !important;
+  color: var(--colorAccentFg) !important;
 }
 
 .toggle-trash>button:hover {
