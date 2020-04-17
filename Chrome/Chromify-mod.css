@@ -4,6 +4,16 @@
     --radiusHalf: calc(var(--radius) * 0.5) !important;
 }
 
+.tab-position {
+
+    margin-left: 6px !important;
+}
+
+.tabs-top .tab.active:not(.marked):not(.tab-mini):before {
+    bottom: 0;
+    margin-left: 10px !important;
+  }
+
 .extensions-wrapper .button-toolbar.browserAction-button {
     width: calc((var(--padding) * 2) + 10px);
 }
