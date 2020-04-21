@@ -1,6 +1,11 @@
 #tabs-container .sync-and-trash-container {
     align-items: flex-start;
 }
+.button-toolbar .newtab {
+    
+    margin-left: 5px !important;
+    
+}
 
 /* .vivaldi {
 	margin-top: 8px;

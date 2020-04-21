@@ -5,8 +5,19 @@
 /*------------------ SIDEBAR --------------------------------*/
 /*------------------ SIDEBAR --------------------------------*/
 
-
-
+#panels-container {
+       background: var(--colorFgAlpha) !important;
+    
+}
+.address-top .toolbar-mainbar:after {
+    content: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 1px;
+    background-color: var(--colorBorder);
+    bottom: 0;
+}
 #panels-container.left #switch,
 #switch>button:focus:not(active) {
   background-color: var(--colorAccent) !important;
@@ -110,8 +121,9 @@
   background-color: transparent;
 }
 
-div#webview-container {
-  border-left: 1px solid var(--colorAccentBg) !important;
+#webview-container {
+
+    margin-top: -2px;
 }
 
 /* #webview-container:before {
