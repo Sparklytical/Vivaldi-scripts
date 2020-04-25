@@ -1,37 +1,34 @@
 #main .toolbar.toolbar-addressbar.toolbar-mainbar.toolbar-large {
-      padding-left: 40px;
-  /* border-left: 1px solid var(--colorAccentBg) !important; */
-  padding-top: 3px;
-  /* padding-bottom: 3px; */
+	padding-left: 40px;
+	/* border-left: 1px solid var(--colorAccentBg) !important; */
+	padding-top: 3px;
+	/* padding-bottom: 3px; */
 }
-
 .toolbar-mainbar {
-    color: var(--colorAccentBg);
-    background-color:transparent;
+	color: var(--colorFg);
+	background-color: transparent;
 }
 
-#browser.linux, #browser.linux + div, #browser.linux + div + div, #browser.linux button, #browser.linux input, #browser.linux select, #browser.linux textarea {
-
-       background: transparent;
-  
+#browser.linux + div,
+#browser.linux + div + div,
+#browser.linux button,
+#browser.linux input,
+#browser.linux select,
+#browser.linux textarea {
+	background: transparent;
 }
-
-.color-behind-tabs-on .addressfield, .color-behind-tabs-on .searchfield {
-    border-color: var(--colorBorder);
-    height: 29px;
+.color-behind-tabs-on .addressfield,
+.color-behind-tabs-on .searchfield {
+	border-color: var(--colorBorder);
+	height: 29px;
 }
-
-.addressfield, .searchfield {
-   
-    padding: 3px;
+.addressfield,
+.searchfield {
+	padding: 3px;
 }
-
 .tabs-top .tab.active:not(.marked):not(.tab-mini):after {
-    
-    display: none;
+	display: none;
 }
-
 .tabs-top .tab.active:not(.marked):not(.tab-mini):before {
-    
-    display: none;
+	display: none;
 }
