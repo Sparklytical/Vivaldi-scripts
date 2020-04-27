@@ -10,6 +10,10 @@
 
 /*------------------ SIDEBAR --------------------------------*/
 
+.UrlField>input {
+        background: var(--colorAccentBg) !important;
+}
+
 #panels-container {
 	background: transparent !important;
 }
@@ -83,7 +87,7 @@
 	display: none;
 }
 #panels .addwebpanelcallout {
-	background-color: transparent;
+	background-color: white;
 	margin-left: -201px;
 	animation: none !important;
 }

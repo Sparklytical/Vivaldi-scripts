@@ -1,2 +1,0 @@
-/* Use Dark BG Background tabs */
-.tab:not(.active) { background: var(--colorAccentBgDarker) !important}

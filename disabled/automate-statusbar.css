@@ -1,6 +1,0 @@
-/* automate status bar */
-.toolbar-statusbar {position:fixed; bottom:0; right:0; z-index:0; height:27px; width:auto; border-radius: var(--radius); border:none; transition: .15s 0s !important;}
-.toolbar-statusbar:not(:focus-within):not(:hover) {margin-bottom:-14px; padding-top:13px; background:transparent !important; transition: .15s .4s !important;}
-.toolbar-statusbar > .button-toolbar > button {margin-top: 3px;}
-.StatusInfo {position:fixed; left:2px; bottom:2px; padding: 2px 0; border-radius: 2px; background: var(--colorBgDark); visibility:hidden;}
-.StatusInfo--Visible {visibility:visible;}
