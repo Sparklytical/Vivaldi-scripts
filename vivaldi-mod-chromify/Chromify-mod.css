@@ -15,6 +15,7 @@
 span > .tab-position > .tab:not(.tab-mini):not(.active):hover {
 	background-color: var(--colorHighlightFgAlphaHeavy) !important;
 }
+/*
 span > .tab-position > .tab:not(.tab-mini):not(.active):not(:hover)::after {
     content: "";
     right: -1px;
@@ -24,6 +25,7 @@ span > .tab-position > .tab:not(.tab-mini):not(.active):not(:hover)::after {
 	border-left: 1px solid #00000033;
     position: absolute;
 }
+*/
 span > .tab-position > .tab:not(.tab-mini):not(.active):hover::after {
     background-color: #00000000;
 }
@@ -54,7 +56,7 @@ span > .tab-position > .tab:not(.tab-mini):not(.active):hover::after {
     border-bottom-right-radius: 5px !important;
     opacity: 0.8;
 }
-	
+	/*
 #browser.color-behind-tabs-on .tab-position .tab:not(.tab-mini)::before {
     content: "";
     background-color: transparent;
@@ -66,6 +68,7 @@ span > .tab-position > .tab:not(.tab-mini):not(.active):hover::after {
     top: calc(100% - 10px);
     -webkit-mask: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 70%, #000 73%);
 }	
+*/
 #browser.color-behind-tabs-on .tab-position .tab:not(.active):not(.tab-mini):hover::before {
 	background-color: var(--colorHighlightFgAlphaHeavy) !important;
 }
