@@ -13,10 +13,10 @@
 .UrlField>input {
         background: var(--colorAccentBg) !important;
 }
-*/
+
 #panels-container {
 	background: transparent !important;
-}
+}*/
 .address-top .toolbar-mainbar:after {
 	content: none;
 	position: absolute;

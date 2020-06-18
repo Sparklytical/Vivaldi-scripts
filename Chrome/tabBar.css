@@ -1,6 +1,10 @@
-#browser.color-behind-tabs-on .tab-position .tab.active.active {
-    border-radius: 10px;}
+//#browser.color-behind-tabs-on .tab-position .tab.active.active {
+  //  border-radius: 10px;}
 #browser.color-behind-tabs-on .tab-position .tab:not(.tab-mini)::before {
 display: none !important}
 #browser.color-behind-tabs-on .tab-position .tab:not(.tab-mini)::after {
 display: none !important}
+#browser.linux .window-buttongroup button {
+
+    background-color: transparent !important;
+}
