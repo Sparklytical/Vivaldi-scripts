@@ -8,3 +8,10 @@ display: none !important}
 
     background-color: transparent !important;
 }
+.ContentBlocker-Control {
+    display: none !important
+}
+
+.SiteInfoButton {
+    display: none !important
+}
