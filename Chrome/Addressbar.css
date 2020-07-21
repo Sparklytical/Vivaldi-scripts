@@ -39,10 +39,10 @@
 	display: none;
 }
 
-/* Hide content blocker button */
+/* Hide content blocker button 
 .button-toolbar button[title^="Content Blocker"] {
 	display: none;
-}
+}*/
 .tabs-top .tab.active:not(.marked):not(.tab-mini):after {
  	display: none;
 }
